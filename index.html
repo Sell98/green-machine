@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Green Machine</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Green Machine">
+<meta name="theme-color" content="#10160B">
+<style>
+:root{
+  --pitch-dark:#070A05;
+  --pitch:#10160B;
+  --pitch-light:#1D3320;
+  --brand-green:#2E8B45;
+  --chalk:#0A0C08;
+  --chalk-dim:#171C10;
+  --line:#FFFFFF;
+  --amber:#7ED957;
+  --team-a:#33A854;
+  --team-b:#F3F5EF;
+  --red:#E5534A;
+  --ink:#ECEFE6;
+  --ink-soft:#8A9280;
+  --paper-border:#242B1B;
+  --on-light:#0B140C;
+}
+*{box-sizing:border-box;}
+#app{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  color:var(--ink);
+  background-color:var(--chalk);
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2790%27%20height%3D%2790%27%20viewBox%3D%270%200%20100%20100%27%3E%3Cg%20fill%3D%27%2333A854%27%20fill-opacity%3D%270.06%27%3E%3Cpolygon%20points%3D%2750%2C50%2044%2C30%2050%2C6%2056%2C30%27%20transform%3D%27rotate%280%2050%2050%29%27%2F%3E%3Cpolygon%20points%3D%2750%2C50%2044%2C30%2050%2C6%2056%2C30%27%20transform%3D%27rotate%2851.4%2050%2050%29%27%2F%3E%3Cpolygon%20points%3D%2750%2C50%2044%2C30%2050%2C6%2056%2C30%27%20transform%3D%27rotate%28102.9%2050%2050%29%27%2F%3E%3Cpolygon%20points%3D%2750%2C50%2044%2C30%2050%2C6%2056%2C30%27%20transform%3D%27rotate%28154.3%2050%2050%29%27%2F%3E%3Cpolygon%20points%3D%2750%2C50%2044%2C30%2050%2C6%2056%2C30%27%20transform%3D%27rotate%28205.7%2050%2050%29%27%2F%3E%3Cpolygon%20points%3D%2750%2C50%2044%2C30%2050%2C6%2056%2C30%27%20transform%3D%27rotate%28257.1%2050%2050%29%27%2F%3E%3Cpolygon%20points%3D%2750%2C50%2044%2C30%2050%2C6%2056%2C30%27%20transform%3D%27rotate%28308.6%2050%2050%29%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-repeat:repeat;
+  background-size:130px 130px;
+  max-width:480px;
+  margin:0 auto;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  padding-bottom:76px;
+  position:relative;
+}
+.eyebrow{
+  font-family:'Arial Narrow',Arial,sans-serif;
+  font-weight:800;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  font-size:11px;
+  opacity:0.85;
+}
+.display{
+  font-family:'Arial Narrow',Arial,sans-serif;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:0.02em;
+}
+.mono{font-family:'Courier New',Courier,monospace;}
+button{font-family:inherit;}
+.header{
+  background-color:var(--pitch);
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27170%27%20height%3D%27170%27%20viewBox%3D%270%200%20100%20100%27%3E%3Cg%20fill%3D%27%2333A854%27%20fill-opacity%3D%270.16%27%3E%3Cpolygon%20points%3D%2750%2C50%2044%2C30%2050%2C6%2056%2C30%27%20transform%3D%27rotate%280%2050%2050%29%27%2F%3E%3Cpolygon%20points%3D%2750%2C50%2044%2C30%2050%2C6%2056%2C30%27%20transform%3D%27rotate%2851.4%2050%2050%29%27%2F%3E%3Cpolygon%20points%3D%2750%2C50%2044%2C30%2050%2C6%2056%2C30%27%20transform%3D%27rotate%28102.9%2050%2050%29%27%2F%3E%3Cpolygon%20points%3D%2750%2C50%2044%2C30%2050%2C6%2056%2C30%27%20transform%3D%27rotate%28154.3%2050%2050%29%27%2F%3E%3Cpolygon%20points%3D%2750%2C50%2044%2C30%2050%2C6%2056%2C30%27%20transform%3D%27rotate%28205.7%2050%2050%29%27%2F%3E%3Cpolygon%20points%3D%2750%2C50%2044%2C30%2050%2C6%2056%2C30%27%20transform%3D%27rotate%28257.1%2050%2050%29%27%2F%3E%3Cpolygon%20points%3D%2750%2C50%2044%2C30%2050%2C6%2056%2C30%27%20transform%3D%27rotate%28308.6%2050%2050%29%27%2F%3E%3Cline%20x1%3D%2750%27%20y1%3D%2752%27%20x2%3D%2750%27%20y2%3D%2792%27%20stroke%3D%27%2333A854%27%20stroke-width%3D%273%27%20stroke-opacity%3D%270.16%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"), repeating-linear-gradient(90deg,var(--pitch) 0 40px,var(--pitch-light) 40px 42px);
+  background-position:105% -15%, 0 0;
+  background-size:170px 170px, auto;
+  background-repeat:no-repeat, repeat;
+  color:var(--ink);
+  padding:18px 20px 20px;
+  border-bottom:4px solid var(--amber);
+}
+.header .eyebrow{color:var(--amber);}
+.header h1{margin:2px 0 0;font-size:22px;}
+.score-wrap{
+  margin-top:14px;background:var(--pitch-dark);
+  border:1px solid rgba(126,217,87,0.18);border-radius:8px;
+  padding:12px 14px;display:flex;align-items:center;justify-content:space-between;
+}
+.score-side{text-align:center;flex:1;}
+.score-side .name{font-size:11px;letter-spacing:0.05em;text-transform:uppercase;opacity:0.9;}
+.score-num{font-size:32px;font-weight:700;color:var(--amber);}
+.score-mid{padding:0 10px;opacity:0.6;font-size:20px;}
+.timer-row{display:flex;align-items:center;justify-content:space-between;margin-top:10px;}
+.timer{font-size:20px;letter-spacing:0.05em;}
+.pill-btn{
+  border:1px solid var(--amber);color:var(--amber);background:transparent;
+  border-radius:20px;padding:6px 14px;font-size:13px;font-weight:700;
+}
+main{flex:1;padding:16px 18px 8px;}
+.card{background:var(--chalk-dim);border:1px solid var(--paper-border);border-radius:10px;padding:14px 16px;margin-bottom:14px;}
+.section-title{font-size:13px;color:var(--ink-soft);margin:0 0 10px;letter-spacing:0.04em;text-transform:uppercase;font-weight:700;}
+input[type=text]{width:100%;padding:10px 12px;border:1px solid var(--paper-border);border-radius:8px;font-size:15px;background:var(--pitch-dark);color:var(--ink);}
+.row{display:flex;gap:8px;}
+.btn{border:none;border-radius:8px;padding:11px 14px;font-size:14px;font-weight:700;cursor:pointer;}
+.btn-primary{background:var(--brand-green);color:var(--ink);}
+.btn-amber{background:var(--amber);color:var(--on-light);}
+.btn-outline{background:transparent;border:1px solid var(--paper-border);color:var(--ink);}
+.btn-red{background:transparent;color:var(--red);border:1px solid var(--red);}
+.btn-block{width:100%;}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--paper-border);border-radius:20px;padding:6px 12px;font-size:13px;margin:4px 6px 0 0;background:var(--pitch-dark);}
+.chip.on{background:var(--brand-green);color:var(--ink);border-color:var(--brand-green);}
+.chip button{background:none;border:none;color:inherit;font-size:14px;line-height:1;cursor:pointer;padding:0 0 0 2px;}
+.player-row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px dashed var(--paper-border);font-size:14px;}
+.player-row:last-child{border-bottom:none;}
+.event-list{list-style:none;margin:0;padding:0;}
+.event-item{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--paper-border);font-size:13.5px;}
+.event-item:last-child{border-bottom:none;}
+.event-icon{width:26px;height:26px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:var(--pitch-dark);}
+.event-min{color:var(--ink-soft);font-size:12px;min-width:34px;}
+.empty{color:var(--ink-soft);font-size:13.5px;text-align:center;padding:20px 0;}
+.overlay{position:absolute;inset:0;background:rgba(0,0,0,0.7);display:flex;align-items:flex-end;z-index:10;}
+.sheet{background:var(--chalk-dim);width:100%;border-radius:16px 16px 0 0;padding:18px 18px 22px;max-height:70vh;overflow-y:auto;border-top:1px solid var(--paper-border);}
+.sheet h3{margin:0 0 12px;font-size:16px;color:var(--ink);}
+.sheet .grp-label{font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-soft);margin:12px 0 2px;}
+.pick-row{width:100%;text-align:left;padding:12px 8px;border:none;border-bottom:1px solid var(--paper-border);background:none;font-size:15px;color:var(--ink);}
+.pick-row:active{background:var(--pitch-dark);}
+.stat-table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.stat-table th{text-align:left;color:var(--ink-soft);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:0.04em;padding-bottom:6px;border-bottom:1px solid var(--paper-border);}
+.stat-table td{padding:8px 4px;border-bottom:1px dashed var(--paper-border);}
+.stat-table td.num,.stat-table th.num{text-align:center;}
+.match-summary{border:1px solid var(--paper-border);border-radius:8px;padding:10px 12px;margin-bottom:10px;cursor:pointer;}
+.match-summary .top{display:flex;justify-content:space-between;font-weight:700;font-size:14px;}
+.match-summary .date{font-size:12px;color:var(--ink-soft);margin-top:2px;}
+.tabbar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;background:var(--chalk-dim);border-top:1px solid var(--paper-border);display:flex;}
+.tab{flex:1;border:none;background:none;padding:9px 0 8px;display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--ink-soft);font-size:10.5px;font-weight:600;}
+.tab.active{color:var(--amber);}
+.tab .dot{width:5px;height:5px;border-radius:50%;background:transparent;}
+.tab.active .dot{background:var(--amber);}
+.loading{padding:40px 0;text-align:center;color:var(--ink-soft);}
+.team-group{margin-bottom:14px;}
+.team-group h4{font-size:13px;margin:0 0 8px;display:flex;align-items:center;gap:6px;color:var(--ink);}
+.team-dot{width:9px;height:9px;border-radius:50%;display:inline-block;}
+.assign-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px dashed var(--paper-border);}
+.assign-row:last-child{border-bottom:none;}
+.assign-name{font-size:14px;}
+.seg{display:flex;border:1px solid var(--paper-border);border-radius:8px;overflow:hidden;}
+.seg button{border:none;background:var(--pitch-dark);padding:6px 9px;font-size:11.5px;color:var(--ink-soft);border-left:1px solid var(--paper-border);}
+.seg button:first-child{border-left:none;}
+.seg button.active-none{background:var(--paper-border);color:var(--ink);font-weight:700;}
+.seg button.active-a{background:var(--team-a);color:var(--ink);font-weight:700;}
+.seg button.active-b{background:var(--team-b);color:var(--on-light);font-weight:700;}
+.presence-row{padding:9px 0;border-bottom:1px dashed var(--paper-border);}
+.presence-row:last-child{border-bottom:none;}
+.presence-name{font-size:14px;margin-bottom:6px;}
+.presence-seg{display:flex;gap:6px;}
+.presence-seg button{flex:1;border:1px solid var(--paper-border);background:var(--pitch-dark);border-radius:6px;padding:6px 4px;font-size:11.5px;color:var(--ink-soft);}
+.presence-seg button.active{background:var(--brand-green);color:var(--ink);border-color:var(--brand-green);font-weight:700;}
+.counts-bar{display:flex;gap:14px;font-size:12.5px;color:var(--ink-soft);margin-bottom:12px;flex-wrap:wrap;}
+.counts-bar b{color:var(--ink);}
+html,body{margin:0;padding:0;background:#0A0C08;}
+</style>
+</head>
+<body>
+<div id="app"><div class="loading">Carregando súmula...</div></div>
+<script>
+(function(){
+  const app = document.getElementById('app');
+  let state = {
+    roster: [],
+    teamBase: null,
+    activeMatch: null,
+    history: [],
+    tab: 'elenco',
+    picker: null,
+    matchSetupStatus: {},
+    expandedMatch: null,
+    confirmDialog: null,
+    githubConfig: null,
+    syncStatus: 'unconfigured',
+    ready: false
+  };
+
+  function uid(){ return Math.random().toString(36).slice(2,9); }
+
+  const STORE_PREFIX = 'green-machine:';
+  function storageGet(key){
+    try{
+      const v = localStorage.getItem(STORE_PREFIX+key);
+      return v===null ? null : {value:v};
+    }catch(e){ return null; }
+  }
+  function storageSet(key,value){
+    try{ localStorage.setItem(STORE_PREFIX+key, value); return {value}; }
+    catch(e){ console.error('erro ao salvar', e); return null; }
+  }
+  function storageDelete(key){
+    try{ localStorage.removeItem(STORE_PREFIX+key); return {deleted:true}; }
+    catch(e){ return null; }
+  }
+
+  function loadGithubConfig(){
+    try{
+      const raw = localStorage.getItem(STORE_PREFIX+'github-config');
+      return raw ? JSON.parse(raw) : null;
+    }catch(e){ return null; }
+  }
+  function saveGithubConfig(cfg){
+    try{ localStorage.setItem(STORE_PREFIX+'github-config', JSON.stringify(cfg)); }catch(e){}
+  }
+  function removeGithubConfig(){
+    try{ localStorage.removeItem(STORE_PREFIX+'github-config'); }catch(e){}
+  }
+
+  function b64EncodeUnicode(str){ return btoa(unescape(encodeURIComponent(str))); }
+  function b64DecodeUnicode(str){ return decodeURIComponent(escape(atob(str.replace(/\n/g,'')))); }
+
+  const SYNC_FILE = 'green-machine-data.json';
+  let remoteSha = null;
+  let pushTimer = null;
+
+  async function githubFetchRemote(){
+    if(!state.githubConfig) return {status:'error'};
+    const {owner, repo, token} = state.githubConfig;
+    try{
+      const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${SYNC_FILE}`, {
+        headers:{ 'Authorization':'Bearer '+token, 'Accept':'application/vnd.github+json' }
+      });
+      if(res.status===404){ remoteSha = null; return {status:'not_found'}; }
+      if(!res.ok) return {status:'error'};
+      const json = await res.json();
+      remoteSha = json.sha;
+      const decoded = b64DecodeUnicode(json.content);
+      return {status:'ok', data: JSON.parse(decoded)};
+    }catch(e){ return {status:'error'}; }
+  }
+
+  async function githubPushRemote(){
+    if(!state.githubConfig) return;
+    state.syncStatus = 'saving';
+    render();
+    const {owner, repo, token} = state.githubConfig;
+    const payload = {
+      roster: state.roster,
+      teamBase: state.teamBase,
+      activeMatch: state.activeMatch,
+      history: state.history,
+      updatedAt: new Date().toISOString()
+    };
+    const body = {
+      message: 'Atualização automática - ' + new Date().toLocaleString('pt-BR'),
+      content: b64EncodeUnicode(JSON.stringify(payload, null, 2))
+    };
+    if(remoteSha) body.sha = remoteSha;
+    try{
+      const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${SYNC_FILE}`, {
+        method:'PUT',
+        headers:{ 'Authorization':'Bearer '+token, 'Accept':'application/vnd.github+json', 'Content-Type':'application/json' },
+        body: JSON.stringify(body)
+      });
+      if(res.status===409){
+        await githubFetchRemote();
+        return githubPushRemote();
+      }
+      if(!res.ok) throw new Error('status '+res.status);
+      const json = await res.json();
+      remoteSha = json.content.sha;
+      state.syncStatus = 'saved';
+    }catch(e){
+      state.syncStatus = 'error';
+    }
+    render();
+  }
+
+  function schedulePush(){
+    if(!state.githubConfig) return;
+    if(pushTimer) clearTimeout(pushTimer);
+    pushTimer = setTimeout(()=>{ githubPushRemote(); }, 1000);
+  }
+
+  async function applyRemoteData(data){
+    state.roster = Array.isArray(data.roster) ? data.roster : state.roster;
+    state.teamBase = (data.teamBase && typeof data.teamBase==='object') ? data.teamBase : state.teamBase;
+    state.activeMatch = data.activeMatch || null;
+    state.history = Array.isArray(data.history) ? data.history : state.history;
+    storageSet('roster', JSON.stringify(state.roster));
+    storageSet('team-base', JSON.stringify(state.teamBase));
+    if(state.activeMatch) storageSet('active-match', JSON.stringify(state.activeMatch)); else storageDelete('active-match');
+    storageSet('match-history', JSON.stringify(state.history));
+  }
+
+  async function connectAndSync(){
+    const result = await githubFetchRemote();
+    if(result.status==='ok'){ await applyRemoteData(result.data); state.syncStatus='saved'; }
+    else if(result.status==='not_found'){ await githubPushRemote(); }
+    else { state.syncStatus='error'; }
+    render();
+  }
+
+  function syncStatusLabel(){
+    if(!state.githubConfig) return 'Salvando só neste celular';
+    if(state.syncStatus==='saving') return 'Sincronizando...';
+    if(state.syncStatus==='error') return 'Sem conexão com o GitHub';
+    if(state.syncStatus==='saved') return 'Sincronizado com o GitHub';
+    return 'Conectado ao GitHub';
+  }
+
+  function monthLabel(){
+    const d = new Date();
+    let s = d.toLocaleDateString('pt-BR', {month:'long', year:'numeric'});
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  }
+
+  async function load(){
+    try{ const r = storageGet('roster'); state.roster = r ? JSON.parse(r.value) : []; }
+    catch(e){ state.roster = []; }
+    try{
+      const t = storageGet('team-base');
+      state.teamBase = t ? JSON.parse(t.value) : null;
+    }catch(e){ state.teamBase = null; }
+    if(!state.teamBase){
+      state.teamBase = {label: monthLabel(), teamAName:'Time A', teamBName:'Time B', assignments:{}};
+    }
+    try{ const m = storageGet('active-match'); state.activeMatch = m ? JSON.parse(m.value) : null; }
+    catch(e){ state.activeMatch = null; }
+    try{ const h = storageGet('match-history'); state.history = h ? JSON.parse(h.value) : []; }
+    catch(e){ state.history = []; }
+    state.tab = state.activeMatch ? 'partida' : (state.roster.length ? 'partida' : 'elenco');
+    state.githubConfig = loadGithubConfig();
+    state.syncStatus = state.githubConfig ? 'saving' : 'unconfigured';
+    state.ready = true;
+    render();
+    if(state.githubConfig){
+      await connectAndSync();
+    }
+  }
+
+  async function saveRoster(){ storageSet('roster', JSON.stringify(state.roster)); schedulePush(); }
+  async function saveTeamBase(){ storageSet('team-base', JSON.stringify(state.teamBase)); schedulePush(); }
+  async function saveActiveMatch(){ storageSet('active-match', JSON.stringify(state.activeMatch)); schedulePush(); }
+  async function clearActiveMatch(){ storageDelete('active-match'); schedulePush(); }
+  async function saveHistory(){ storageSet('match-history', JSON.stringify(state.history)); schedulePush(); }
+
+  function playerName(id){ const p = state.roster.find(p=>p.id===id); return p ? p.name : '(removido)'; }
+  function teamOf(id){ return state.teamBase.assignments[id] || null; }
+
+  function minuteNow(){
+    if(!state.activeMatch) return 0;
+    const elapsed = state.activeMatch.elapsedMs + (state.activeMatch.running ? (Date.now() - state.activeMatch.startedAt) : 0);
+    return Math.floor(elapsed/60000);
+  }
+  function fmtClock(ms){
+    const total = Math.floor(ms/1000);
+    const mm = String(Math.floor(total/60)).padStart(2,'0');
+    const ss = String(total%60).padStart(2,'0');
+    return mm+':'+ss;
+  }
+  let tickHandle = null;
+  function ensureTicking(){
+    if(tickHandle) clearInterval(tickHandle);
+    if(state.activeMatch && state.activeMatch.running){ tickHandle = setInterval(renderTimerOnly, 1000); }
+  }
+  function renderTimerOnly(){
+    const el = document.getElementById('timer-display');
+    if(!el || !state.activeMatch) return;
+    const elapsed = state.activeMatch.elapsedMs + (state.activeMatch.running ? (Date.now() - state.activeMatch.startedAt) : 0);
+    el.textContent = fmtClock(elapsed);
+  }
+
+  function icon(type){
+    if(type==='gol') return '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7ED957" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7l3.5 2.5-1.3 4h-4.4l-1.3-4z"/></svg>';
+    if(type==='assistencia') return '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ECEFE6" stroke-width="2.2"><path d="M4 12h14M13 6l6 6-6 6"/></svg>';
+    return '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8A9280" stroke-width="2.2"><path d="M7 7h10l-3-3M17 17H7l3 3"/></svg>';
+  }
+
+  function escapeHtml(s){
+    return String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function render(){
+    if(!state.ready){ app.innerHTML = '<div class="loading">Carregando súmula...</div>'; return; }
+    let html = '';
+    html += renderHeader();
+    html += '<main>';
+    if(state.tab==='elenco') html += renderElenco();
+    else if(state.tab==='times') html += renderTimes();
+    else if(state.tab==='partida') html += renderPartida();
+    else html += renderHistorico();
+    html += '</main>';
+    html += renderTabbar();
+    if(state.picker) html += renderPicker();
+    if(state.confirmDialog) html += renderConfirm();
+    app.innerHTML = html;
+    attachHandlers();
+    ensureTicking();
+  }
+
+  function renderHeader(){
+    const m = state.activeMatch;
+    let scoreBlock = '';
+    if(m){
+      const elapsed = m.elapsedMs + (m.running ? (Date.now()-m.startedAt) : 0);
+      scoreBlock = `
+        <div class="score-wrap">
+          <div class="score-side"><div class="name">${escapeHtml(m.teamAName)}</div><div class="score-num">${m.scoreA}</div></div>
+          <div class="score-mid">x</div>
+          <div class="score-side"><div class="name">${escapeHtml(m.teamBName)}</div><div class="score-num">${m.scoreB}</div></div>
+        </div>
+        <div class="timer-row">
+          <div class="timer mono" id="timer-display">${fmtClock(elapsed)}</div>
+          <div class="row">
+            <button class="pill-btn" data-action="toggle-clock">${m.running?'Pausar':'Retomar'}</button>
+            <button class="pill-btn" data-action="end-match">Encerrar</button>
+          </div>
+        </div>`;
+    }
+    return `
+      <div class="header">
+        <div class="eyebrow">Súmula da pelada</div>
+        <h1 class="display">${m ? 'Partida em andamento' : 'Green Machine'}</h1>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:8px;">
+          <span style="font-size:11px;color:var(--ink-soft);">${syncStatusLabel()}</span>
+          <button class="pill-btn" data-action="open-sync-settings" style="padding:4px 12px;font-size:11px;">Sincronização</button>
+        </div>
+        ${scoreBlock}
+      </div>`;
+  }
+
+  function renderElenco(){
+    let rows = state.roster.map(p=>`
+      <div class="player-row">
+        <span>${escapeHtml(p.name)}</span>
+        <button class="btn-red" style="border:none;padding:2px 6px;font-size:16px;" data-action="remove-player" data-id="${p.id}">&times;</button>
+      </div>`).join('');
+    if(!state.roster.length) rows = '<div class="empty">Nenhum jogador cadastrado ainda.</div>';
+    return `
+      <div class="card">
+        <p class="section-title">Adicionar jogador</p>
+        <div class="row">
+          <input type="text" id="new-player-name" placeholder="Nome do jogador" />
+          <button class="btn btn-primary" data-action="add-player">Add</button>
+        </div>
+      </div>
+      <div class="card">
+        <p class="section-title">Grupo (${state.roster.length})</p>
+        ${rows}
+      </div>`;
+  }
+
+  function renderTimes(){
+    const tb = state.teamBase;
+    const countA = state.roster.filter(p=>teamOf(p.id)==='A').length;
+    const countB = state.roster.filter(p=>teamOf(p.id)==='B').length;
+    const countNone = state.roster.length - countA - countB;
+    let rows = state.roster.map(p=>{
+      const t = teamOf(p.id);
+      return `
+        <div class="assign-row">
+          <span class="assign-name">${escapeHtml(p.name)}</span>
+          <div class="seg">
+            <button class="${!t?'active-none':''}" data-action="assign-team" data-id="${p.id}" data-team="">Sem time</button>
+            <button class="${t==='A'?'active-a':''}" data-action="assign-team" data-id="${p.id}" data-team="A">${escapeHtml(tb.teamAName)}</button>
+            <button class="${t==='B'?'active-b':''}" data-action="assign-team" data-id="${p.id}" data-team="B">${escapeHtml(tb.teamBName)}</button>
+          </div>
+        </div>`;
+    }).join('');
+    if(!state.roster.length) rows = '<div class="empty">Cadastre jogadores na aba Grupo primeiro.</div>';
+    return `
+      <div class="card">
+        <p class="section-title">Base do mês</p>
+        <p style="font-size:13px;color:var(--ink-soft);margin:-4px 0 12px;">${escapeHtml(tb.label)}</p>
+        <div class="row" style="margin-bottom:10px;">
+          <input type="text" id="team-a-name" value="${escapeHtml(tb.teamAName)}" placeholder="Nome do time A" />
+          <input type="text" id="team-b-name" value="${escapeHtml(tb.teamBName)}" placeholder="Nome do time B" />
+        </div>
+        <button class="btn btn-outline btn-block" data-action="reset-teams">Novo sorteio do mês</button>
+      </div>
+      <div class="card">
+        <div class="counts-bar">
+          <span><span class="team-dot" style="background:var(--team-a)"></span> <b>${escapeHtml(tb.teamAName)}</b>: ${countA}</span>
+          <span><span class="team-dot" style="background:var(--team-b)"></span> <b>${escapeHtml(tb.teamBName)}</b>: ${countB}</span>
+          <span>Sem time: ${countNone}</span>
+        </div>
+        ${rows}
+      </div>`;
+  }
+
+  function renderPartida(){
+    if(state.activeMatch) return renderLiveMatch();
+    const tb = state.teamBase;
+    const squadA = state.roster.filter(p=>teamOf(p.id)==='A');
+    const squadB = state.roster.filter(p=>teamOf(p.id)==='B');
+    if(!squadA.length && !squadB.length){
+      return `<div class="card"><p class="empty">Defina os times na aba Times antes de começar uma partida.</p><button class="btn btn-primary btn-block" data-action="set-tab" data-tab="times">Ir para Times</button></div>`;
+    }
+    function presenceGroup(list, teamLabel, dotColor){
+      const rows = list.map(p=>{
+        const status = state.matchSetupStatus[p.id] || 'campo';
+        return `
+          <div class="presence-row">
+            <div class="presence-name">${escapeHtml(p.name)}</div>
+            <div class="presence-seg">
+              <button class="${status==='campo'?'active':''}" data-action="set-presence" data-id="${p.id}" data-status="campo">Em campo</button>
+              <button class="${status==='banco'?'active':''}" data-action="set-presence" data-id="${p.id}" data-status="banco">Banco</button>
+              <button class="${status==='fora'?'active':''}" data-action="set-presence" data-id="${p.id}" data-status="fora">Fora hoje</button>
+            </div>
+          </div>`;
+      }).join('') || '<div class="empty">Ninguém neste time ainda.</div>';
+      return `<div class="team-group"><h4><span class="team-dot" style="background:${dotColor}"></span>${escapeHtml(teamLabel)}</h4>${rows}</div>`;
+    }
+    return `
+      <div class="card">
+        <p class="section-title">Quem joga hoje</p>
+        ${presenceGroup(squadA, tb.teamAName, 'var(--team-a)')}
+        ${presenceGroup(squadB, tb.teamBName, 'var(--team-b)')}
+        <button class="btn btn-primary btn-block" style="margin-top:6px;" data-action="start-match">Começar partida</button>
+      </div>`;
+  }
+
+  function renderLiveMatch(){
+    const m = state.activeMatch;
+    function chipGroup(ids, cls, textCls){
+      return ids.map(id=>`<span class="chip on" style="background:${cls};border-color:${cls};color:${textCls}">${escapeHtml(playerName(id))}</span>`).join('') || '<span class="empty" style="padding:4px 0;">Ninguém</span>';
+    }
+    const campoA = Object.keys(m.squad).filter(id=>m.squad[id].team==='A'&&m.squad[id].status==='campo');
+    const campoB = Object.keys(m.squad).filter(id=>m.squad[id].team==='B'&&m.squad[id].status==='campo');
+    const bancoA = Object.keys(m.squad).filter(id=>m.squad[id].team==='A'&&m.squad[id].status==='banco');
+    const bancoB = Object.keys(m.squad).filter(id=>m.squad[id].team==='B'&&m.squad[id].status==='banco');
+    const events = m.events.slice().reverse().map(ev=>{
+      let label = '';
+      if(ev.type==='gol') label = `Gol de <strong>${escapeHtml(ev.playerName)}</strong> (${escapeHtml(ev.teamName)})`;
+      else if(ev.type==='assistencia') label = `Assistência de <strong>${escapeHtml(ev.playerName)}</strong> (${escapeHtml(ev.teamName)})`;
+      else label = `${escapeHtml(ev.playerOutName)} sai, ${escapeHtml(ev.playerInName)} entra (${escapeHtml(ev.teamName)})`;
+      return `<li class="event-item"><span class="event-min mono">${ev.minute}'</span><span class="event-icon">${icon(ev.type)}</span><span>${label}</span></li>`;
+    }).join('');
+    return `
+      <div class="card">
+        <p class="section-title">Registrar</p>
+        <div class="row">
+          <button class="btn btn-amber" style="flex:1" data-action="open-picker" data-kind="gol">Gol</button>
+          <button class="btn btn-amber" style="flex:1" data-action="open-picker" data-kind="assistencia">Assistência</button>
+        </div>
+        <button class="btn btn-outline btn-block" style="margin-top:8px;" data-action="open-picker" data-kind="sub-out">Substituição</button>
+      </div>
+      <div class="card">
+        <p class="section-title">${escapeHtml(m.teamAName)} em campo</p>
+        <div>${chipGroup(campoA,'var(--team-a)','var(--ink)')}</div>
+        ${bancoA.length? `<p class="section-title" style="margin-top:10px;">Banco</p><div>${chipGroup(bancoA,'var(--pitch-dark)','var(--ink-soft)')}</div>`:''}
+      </div>
+      <div class="card">
+        <p class="section-title">${escapeHtml(m.teamBName)} em campo</p>
+        <div>${chipGroup(campoB,'var(--team-b)','var(--on-light)')}</div>
+        ${bancoB.length? `<p class="section-title" style="margin-top:10px;">Banco</p><div>${chipGroup(bancoB,'var(--pitch-dark)','var(--ink-soft)')}</div>`:''}
+      </div>
+      <div class="card">
+        <p class="section-title">Linha do tempo</p>
+        <ul class="event-list">${events || '<div class="empty">Nenhum evento registrado ainda.</div>'}</ul>
+      </div>`;
+  }
+
+  function renderHistorico(){
+    const agg = {};
+    state.history.forEach(match=>{
+      (match.appearances||[]).forEach(a=>{
+        if(!agg[a.id]) agg[a.id] = {name:a.name, jogos:new Set(), gols:0, assist:0};
+        agg[a.id].jogos.add(match.id);
+      });
+      match.events.forEach(ev=>{
+        if(ev.type==='gol'||ev.type==='assistencia'){
+          if(!agg[ev.playerId]) agg[ev.playerId] = {name: ev.playerName, jogos:new Set([match.id]), gols:0, assist:0};
+          if(ev.type==='gol') agg[ev.playerId].gols++;
+          else agg[ev.playerId].assist++;
+        }
+      });
+    });
+    const rows = Object.values(agg).sort((a,b)=>b.gols-a.gols).map(p=>`
+      <tr><td>${escapeHtml(p.name)}</td><td class="num">${p.jogos.size}</td><td class="num">${p.gols}</td><td class="num">${p.assist}</td></tr>
+    `).join('');
+    const statTable = Object.keys(agg).length ? `
+      <div class="card">
+        <p class="section-title">Estatísticas gerais</p>
+        <table class="stat-table"><tr><th>Jogador</th><th class="num">J</th><th class="num">G</th><th class="num">A</th></tr>${rows}</table>
+      </div>` : '';
+    const matches = state.history.slice().reverse().map(match=>`
+      <div class="match-summary" data-action="toggle-match" data-id="${match.id}">
+        <div class="top"><span>${escapeHtml(match.teamAName)} ${match.scoreA} x ${match.scoreB} ${escapeHtml(match.teamBName)}</span></div>
+        <div class="date">${match.date}</div>
+        ${state.expandedMatch===match.id ? renderMatchDetail(match) : ''}
+      </div>
+    `).join('');
+    return `
+      ${statTable}
+      <div class="card">
+        <p class="section-title">Partidas salvas (${state.history.length})</p>
+        ${matches || '<div class="empty">Nenhuma partida encerrada ainda.</div>'}
+        ${state.history.length ? '<button class="btn btn-red btn-block" style="margin-top:12px;" data-action="clear-history">Apagar histórico</button>' : ''}
+      </div>
+      <div class="card">
+        <p class="section-title">Backup</p>
+        <p style="font-size:13px;color:var(--ink-soft);margin:-4px 0 12px;">Salve uma cópia num arquivo. Assim, se limpar os dados do navegador ou trocar de celular, é só importar de novo.</p>
+        <div class="row">
+          <button class="btn btn-outline" style="flex:1" data-action="export-backup">Exportar backup</button>
+          <button class="btn btn-outline" style="flex:1" data-action="import-backup">Importar backup</button>
+        </div>
+        <input type="file" id="import-file-input" accept="application/json" style="display:none;">
+      </div>`;
+  }
+
+  function renderMatchDetail(match){
+    const events = match.events.map(ev=>{
+      let label = '';
+      if(ev.type==='gol') label = `Gol de ${escapeHtml(ev.playerName)} (${escapeHtml(ev.teamName)})`;
+      else if(ev.type==='assistencia') label = `Assistência de ${escapeHtml(ev.playerName)} (${escapeHtml(ev.teamName)})`;
+      else label = `${escapeHtml(ev.playerOutName)} sai, ${escapeHtml(ev.playerInName)} entra (${escapeHtml(ev.teamName)})`;
+      return `<li class="event-item"><span class="event-min mono">${ev.minute}'</span><span class="event-icon">${icon(ev.type)}</span><span>${label}</span></li>`;
+    }).join('');
+    return `<ul class="event-list" style="margin-top:10px;">${events || '<div class="empty">Sem eventos.</div>'}</ul>`;
+  }
+
+  function renderTabbar(){
+    const tabs = [
+      {id:'elenco', label:'Grupo', svg:'<circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/>'},
+      {id:'times', label:'Times', svg:'<path d="M12 3l7 3v6c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V6z"/>'},
+      {id:'partida', label:'Partida', svg:'<circle cx="12" cy="12" r="9"/><path d="M12 6l3 2.5-1.2 3.5H10.2L9 8.5z"/>'},
+      {id:'historico', label:'Histórico', svg:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>'}
+    ];
+    return '<div class="tabbar">' + tabs.map(t=>`
+      <button class="tab ${state.tab===t.id?'active':''}" data-action="set-tab" data-tab="${t.id}">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">${t.svg}</svg>
+        <span>${t.label}</span><span class="dot"></span>
+      </button>`).join('') + '</div>';
+  }
+
+  function renderPicker(){
+    const p = state.picker;
+    const m = state.activeMatch;
+    let title = '';
+    let body = '';
+    function groupList(kind, ids){
+      const rows = ids.map(id=>`<button class="pick-row" data-action="pick" data-kind="${kind}" data-id="${id}">${escapeHtml(playerName(id))}</button>`).join('');
+      return rows;
+    }
+    if(p.kind==='gol'||p.kind==='assistencia'){
+      title = p.kind==='gol' ? 'Quem fez o gol?' : 'Quem deu a assistência?';
+      const campoA = Object.keys(m.squad).filter(id=>m.squad[id].team==='A'&&m.squad[id].status==='campo');
+      const campoB = Object.keys(m.squad).filter(id=>m.squad[id].team==='B'&&m.squad[id].status==='campo');
+      body = `<div class="grp-label">${escapeHtml(m.teamAName)}</div>${groupList(p.kind,campoA) || '<div class="empty">Ninguém em campo</div>'}
+              <div class="grp-label">${escapeHtml(m.teamBName)}</div>${groupList(p.kind,campoB) || '<div class="empty">Ninguém em campo</div>'}`;
+    } else if(p.kind==='sub-out'){
+      title = 'Quem sai?';
+      const campoA = Object.keys(m.squad).filter(id=>m.squad[id].team==='A'&&m.squad[id].status==='campo');
+      const campoB = Object.keys(m.squad).filter(id=>m.squad[id].team==='B'&&m.squad[id].status==='campo');
+      body = `<div class="grp-label">${escapeHtml(m.teamAName)}</div>${groupList('sub-out',campoA) || '<div class="empty">Ninguém em campo</div>'}
+              <div class="grp-label">${escapeHtml(m.teamBName)}</div>${groupList('sub-out',campoB) || '<div class="empty">Ninguém em campo</div>'}`;
+    } else if(p.kind==='sub-in'){
+      title = 'Quem entra?';
+      const team = m.squad[p.outId].team;
+      const banco = Object.keys(m.squad).filter(id=>m.squad[id].team===team&&m.squad[id].status==='banco');
+      body = groupList('sub-in',banco) || '<div class="empty">Ninguém no banco desse time.</div>';
+    } else if(p.kind==='sync-settings'){
+      const cfg = state.githubConfig || {owner:'', repo:'', token:''};
+      title = 'Sincronização automática';
+      body = `
+        <p style="font-size:13px;color:var(--ink-soft);margin:0 0 12px;">Cole os dados do seu repositório no GitHub e um token gerado em Settings → Developer settings → Fine-grained tokens, com permissão "Contents: Read and write" só nesse repositório.</p>
+        <input type="text" id="sync-owner" placeholder="Usuário do GitHub" value="${escapeHtml(cfg.owner)}" style="margin-bottom:8px;">
+        <input type="text" id="sync-repo" placeholder="Nome do repositório" value="${escapeHtml(cfg.repo)}" style="margin-bottom:8px;">
+        <input type="text" id="sync-token" placeholder="Token" value="${escapeHtml(cfg.token)}" style="margin-bottom:4px;">
+        ${state.githubConfig ? `<p style="font-size:12px;color:var(--ink-soft);margin:0 0 12px;">${syncStatusLabel()}</p>` : ''}
+        <button class="btn btn-primary btn-block" data-action="save-sync-config">Salvar e sincronizar</button>
+        ${state.githubConfig ? '<button class="btn btn-red btn-block" style="margin-top:8px;" data-action="remove-sync-config">Desconectar</button>' : ''}`;
+    }
+    return `
+      <div class="overlay" data-action="close-picker">
+        <div class="sheet" onclick="event.stopPropagation()">
+          <h3>${title}</h3>
+          ${body}
+          <button class="btn btn-outline btn-block" style="margin-top:12px;" data-action="close-picker">Cancelar</button>
+        </div>
+      </div>`;
+  }
+
+  function renderConfirm(){
+    const c = state.confirmDialog;
+    const buttons = c.onlyOk
+      ? `<button class="btn btn-primary btn-block" style="margin-top:14px;" data-action="cancel-confirm">OK</button>`
+      : `<div class="row" style="margin-top:14px;">
+          <button class="btn btn-outline" style="flex:1" data-action="cancel-confirm">Cancelar</button>
+          <button class="btn btn-primary" style="flex:1" data-action="confirm-yes">Confirmar</button>
+        </div>`;
+    return `
+      <div class="overlay" data-action="cancel-confirm">
+        <div class="sheet" onclick="event.stopPropagation()">
+          <h3>${escapeHtml(c.message)}</h3>
+          ${buttons}
+        </div>
+      </div>`;
+  }
+
+  async function doEndMatch(){
+    const m = state.activeMatch;
+    const appearances = Object.keys(m.squad).map(id=>({id, name: playerName(id)}));
+    const finished = {
+      id: m.id, teamAName: m.teamAName, teamBName: m.teamBName,
+      scoreA: m.scoreA, scoreB: m.scoreB,
+      date: new Date().toLocaleDateString('pt-BR'),
+      events: m.events,
+      appearances
+    };
+    state.history.push(finished);
+    await saveHistory();
+    state.activeMatch = null;
+    await clearActiveMatch();
+    state.tab = 'historico';
+  }
+
+  async function doResetTeams(){
+    state.teamBase.assignments = {};
+    state.teamBase.label = monthLabel();
+    await saveTeamBase();
+  }
+
+  async function doClearHistory(){
+    state.history = [];
+    await saveHistory();
+  }
+
+  async function doImportBackup(payload){
+    if(!payload) return;
+    state.roster = Array.isArray(payload.roster) ? payload.roster : [];
+    state.teamBase = payload.teamBase && typeof payload.teamBase==='object'
+      ? payload.teamBase
+      : {label: monthLabel(), teamAName:'Time A', teamBName:'Time B', assignments:{}};
+    state.history = Array.isArray(payload.history) ? payload.history : [];
+    await saveRoster();
+    await saveTeamBase();
+    await saveHistory();
+  }
+
+  async function attachHandlers(){
+    const addBtn = document.querySelector('[data-action="add-player"]');
+    if(addBtn) addBtn.onclick = async ()=>{
+      const input = document.getElementById('new-player-name');
+      const name = input.value.trim();
+      if(!name) return;
+      state.roster.push({id: uid(), name});
+      await saveRoster();
+      render();
+    };
+    document.querySelectorAll('[data-action="remove-player"]').forEach(btn=>{
+      btn.onclick = async ()=>{
+        const id = btn.dataset.id;
+        state.roster = state.roster.filter(p=>p.id!==id);
+        delete state.teamBase.assignments[id];
+        await saveRoster();
+        await saveTeamBase();
+        render();
+      };
+    });
+
+    document.querySelectorAll('[data-action="assign-team"]').forEach(btn=>{
+      btn.onclick = async ()=>{
+        const id = btn.dataset.id;
+        const team = btn.dataset.team;
+        if(team) state.teamBase.assignments[id] = team;
+        else delete state.teamBase.assignments[id];
+        await saveTeamBase();
+        render();
+      };
+    });
+    const teamAInput = document.getElementById('team-a-name');
+    if(teamAInput) teamAInput.onchange = async ()=>{
+      state.teamBase.teamAName = teamAInput.value.trim() || 'Time A';
+      await saveTeamBase(); render();
+    };
+    const teamBInput = document.getElementById('team-b-name');
+    if(teamBInput) teamBInput.onchange = async ()=>{
+      state.teamBase.teamBName = teamBInput.value.trim() || 'Time B';
+      await saveTeamBase(); render();
+    };
+    const resetTeamsBtn = document.querySelector('[data-action="reset-teams"]');
+    if(resetTeamsBtn) resetTeamsBtn.onclick = ()=>{
+      state.confirmDialog = {message:'Começar um novo sorteio do mês? Isso limpa quem está em cada time (o histórico de partidas já salvas não muda).', action:'reset-teams'};
+      render();
+    };
+
+    document.querySelectorAll('[data-action="set-presence"]').forEach(btn=>{
+      btn.onclick = ()=>{
+        state.matchSetupStatus[btn.dataset.id] = btn.dataset.status;
+        render();
+      };
+    });
+    const startBtn = document.querySelector('[data-action="start-match"]');
+    if(startBtn) startBtn.onclick = async ()=>{
+      const tb = state.teamBase;
+      const squad = {};
+      state.roster.forEach(p=>{
+        const team = teamOf(p.id);
+        if(!team) return;
+        const status = state.matchSetupStatus[p.id] || 'campo';
+        if(status==='fora') return;
+        squad[p.id] = {team, status};
+      });
+      state.activeMatch = {
+        id: uid(),
+        teamAName: tb.teamAName,
+        teamBName: tb.teamBName,
+        scoreA: 0, scoreB: 0,
+        squad,
+        events: [],
+        startedAt: Date.now(),
+        elapsedMs: 0,
+        running: true
+      };
+      state.matchSetupStatus = {};
+      await saveActiveMatch();
+      render();
+    };
+
+    const toggleClock = document.querySelector('[data-action="toggle-clock"]');
+    if(toggleClock) toggleClock.onclick = async ()=>{
+      const m = state.activeMatch;
+      if(m.running){ m.elapsedMs += Date.now() - m.startedAt; m.running = false; }
+      else { m.startedAt = Date.now(); m.running = true; }
+      await saveActiveMatch();
+      render();
+    };
+
+    document.querySelectorAll('[data-action="open-picker"]').forEach(btn=>{
+      btn.onclick = ()=>{ state.picker = {kind: btn.dataset.kind}; render(); };
+    });
+    const openSyncBtn = document.querySelector('[data-action="open-sync-settings"]');
+    if(openSyncBtn) openSyncBtn.onclick = ()=>{ state.picker = {kind:'sync-settings'}; render(); };
+    document.querySelectorAll('[data-action="close-picker"]').forEach(el=>{
+      el.onclick = ()=>{ state.picker = null; render(); };
+    });
+
+    document.querySelectorAll('[data-action="pick"]').forEach(btn=>{
+      btn.onclick = async ()=>{
+        const id = btn.dataset.id;
+        const kind = btn.dataset.kind;
+        const m = state.activeMatch;
+        const minute = minuteNow();
+        if(kind==='gol'){
+          const team = m.squad[id].team;
+          const teamName = team==='A'? m.teamAName : m.teamBName;
+          m.events.push({type:'gol', playerId:id, playerName: playerName(id), team, teamName, minute});
+          if(team==='A') m.scoreA++; else m.scoreB++;
+          state.picker = null;
+        } else if(kind==='assistencia'){
+          const team = m.squad[id].team;
+          const teamName = team==='A'? m.teamAName : m.teamBName;
+          m.events.push({type:'assistencia', playerId:id, playerName: playerName(id), team, teamName, minute});
+          state.picker = null;
+        } else if(kind==='sub-out'){
+          state.picker = {kind:'sub-in', outId:id};
+        } else if(kind==='sub-in'){
+          const outId = state.picker.outId;
+          const team = m.squad[outId].team;
+          const teamName = team==='A'? m.teamAName : m.teamBName;
+          m.squad[outId].status = 'banco';
+          m.squad[id].status = 'campo';
+          m.events.push({type:'sub', playerOutId:outId, playerOutName: playerName(outId), playerInId:id, playerInName: playerName(id), team, teamName, minute});
+          state.picker = null;
+        }
+        await saveActiveMatch();
+        render();
+      };
+    });
+
+    const endBtn = document.querySelector('[data-action="end-match"]');
+    if(endBtn) endBtn.onclick = ()=>{
+      state.confirmDialog = {message:'Encerrar a partida e salvar no histórico?', action:'end-match'};
+      render();
+    };
+
+    document.querySelectorAll('[data-action="set-tab"]').forEach(btn=>{
+      btn.onclick = ()=>{ state.tab = btn.dataset.tab; state.picker=null; render(); };
+    });
+    document.querySelectorAll('[data-action="toggle-match"]').forEach(el=>{
+      el.onclick = ()=>{ const id = el.dataset.id; state.expandedMatch = state.expandedMatch===id ? null : id; render(); };
+    });
+    const clearHist = document.querySelector('[data-action="clear-history"]');
+    if(clearHist) clearHist.onclick = ()=>{
+      state.confirmDialog = {message:'Apagar todo o histórico de partidas? Essa ação não pode ser desfeita.', action:'clear-history'};
+      render();
+    };
+
+    const saveSyncBtn = document.querySelector('[data-action="save-sync-config"]');
+    if(saveSyncBtn) saveSyncBtn.onclick = async ()=>{
+      const owner = document.getElementById('sync-owner').value.trim();
+      const repo = document.getElementById('sync-repo').value.trim();
+      const token = document.getElementById('sync-token').value.trim();
+      if(!owner || !repo || !token) return;
+      state.githubConfig = {owner, repo, token};
+      saveGithubConfig(state.githubConfig);
+      state.picker = null;
+      state.syncStatus = 'saving';
+      render();
+      await connectAndSync();
+    };
+    const removeSyncBtn = document.querySelector('[data-action="remove-sync-config"]');
+    if(removeSyncBtn) removeSyncBtn.onclick = ()=>{
+      state.githubConfig = null;
+      removeGithubConfig();
+      state.syncStatus = 'unconfigured';
+      state.picker = null;
+      render();
+    };
+
+    const exportBtn = document.querySelector('[data-action="export-backup"]');
+    if(exportBtn) exportBtn.onclick = ()=>{
+      const payload = {
+        app: 'green-machine-backup',
+        exportedAt: new Date().toISOString(),
+        roster: state.roster,
+        teamBase: state.teamBase,
+        history: state.history
+      };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], {type:'application/json'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'green-machine-backup-' + new Date().toISOString().slice(0,10) + '.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(()=>URL.revokeObjectURL(url), 2000);
+    };
+    const importBtn = document.querySelector('[data-action="import-backup"]');
+    const importInput = document.getElementById('import-file-input');
+    if(importBtn && importInput) importBtn.onclick = ()=> importInput.click();
+    if(importInput) importInput.onchange = ()=>{
+      const file = importInput.files[0];
+      importInput.value = '';
+      if(!file) return;
+      const reader = new FileReader();
+      reader.onload = ()=>{
+        try{
+          const data = JSON.parse(reader.result);
+          state.confirmDialog = {message:'Importar esse backup vai substituir o elenco, os times e o histórico atuais. Continuar?', action:'do-import', payload:data};
+        }catch(e){
+          state.confirmDialog = {message:'Esse arquivo não parece ser um backup válido.', onlyOk:true};
+        }
+        render();
+      };
+      reader.onerror = ()=>{
+        state.confirmDialog = {message:'Não consegui ler esse arquivo.', onlyOk:true};
+        render();
+      };
+      reader.readAsText(file);
+    };
+
+    document.querySelectorAll('[data-action="cancel-confirm"]').forEach(el=>{
+      el.onclick = ()=>{ state.confirmDialog = null; render(); };
+    });    const confirmYesBtn = document.querySelector('[data-action="confirm-yes"]');
+    if(confirmYesBtn) confirmYesBtn.onclick = async ()=>{
+      const action = state.confirmDialog ? state.confirmDialog.action : null;
+      const payload = state.confirmDialog ? state.confirmDialog.payload : null;
+      state.confirmDialog = null;
+      if(action==='end-match') await doEndMatch();
+      else if(action==='reset-teams') await doResetTeams();
+      else if(action==='clear-history') await doClearHistory();
+      else if(action==='do-import') await doImportBackup(payload);
+      render();
+    };
+  }
+
+  load();
+})();
+</script>
+</body>
+</html>
