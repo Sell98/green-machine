@@ -13,9 +13,12 @@
     "label": "Agosto de 2026",
     "teamAName": "Time preto",
     "teamBName": "Time branco",
-    "assignments": {}
+    "assignments": {
+      "21mz0z0": "A",
+      "fqj4s21": "B"
+    }
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:01:31.386Z"
+  "updatedAt": "2026-10-28T18:01:37.632Z"
 }
