@@ -43,6 +43,10 @@
     {
       "id": "xazy1ep",
       "name": "TK"
+    },
+    {
+      "id": "k1hvukt",
+      "name": "BG"
     }
   ],
   "teamBase": {
@@ -53,5 +57,5 @@
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:10:38.038Z"
+  "updatedAt": "2026-10-28T18:10:45.047Z"
 }
