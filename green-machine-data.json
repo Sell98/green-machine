@@ -1,5 +1,10 @@
 {
-  "roster": [],
+  "roster": [
+    {
+      "id": "0yebjk2",
+      "name": "Sell"
+    }
+  ],
   "teamBase": {
     "label": "Agosto de 2026",
     "teamAName": "Time preto",
@@ -8,5 +13,5 @@
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-08-05T18:53:23.373Z"
+  "updatedAt": "2026-10-28T17:50:09.947Z"
 }
