@@ -19,6 +19,10 @@
     {
       "id": "3efh4go",
       "name": "Ber"
+    },
+    {
+      "id": "mc0y4ln",
+      "name": "Ploencio"
     }
   ],
   "teamBase": {
@@ -29,5 +33,5 @@
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:10:01.038Z"
+  "updatedAt": "2026-10-28T18:10:06.047Z"
 }
