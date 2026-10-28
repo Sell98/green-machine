@@ -78,7 +78,103 @@
       "w9gyxew": "B"
     }
   },
-  "activeMatch": null,
+  "activeMatch": {
+    "id": "9pv8wn1",
+    "teamAName": "Time preto",
+    "teamBName": "Time branco",
+    "scoreA": 0,
+    "scoreB": 0,
+    "squad": {
+      "bm3x11z": {
+        "team": "A",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "cjibbb6": {
+        "team": "A",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "d0y33gu": {
+        "team": "B",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "423zamw": {
+        "team": "A",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "3efh4go": {
+        "team": "A",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "mc0y4ln": {
+        "team": "A",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "unpfwjz": {
+        "team": "A",
+        "status": "banco",
+        "gk": false,
+        "wasGk": false
+      },
+      "oknuflr": {
+        "team": "B",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "s51fm51": {
+        "team": "B",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "l3sb4rj": {
+        "team": "B",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "xazy1ep": {
+        "team": "B",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "k1hvukt": {
+        "team": "B",
+        "status": "banco",
+        "gk": false,
+        "wasGk": false
+      },
+      "clmnts4": {
+        "team": "A",
+        "status": "campo",
+        "gk": true,
+        "wasGk": true
+      },
+      "w9gyxew": {
+        "team": "B",
+        "status": "campo",
+        "gk": true,
+        "wasGk": true
+      }
+    },
+    "events": [],
+    "startedAt": 1793213601056,
+    "elapsedMs": 0,
+    "running": true
+  },
   "history": [],
-  "updatedAt": "2026-10-28T18:12:31.399Z"
+  "updatedAt": "2026-10-28T18:53:22.060Z"
 }
