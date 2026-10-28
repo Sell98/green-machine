@@ -3,6 +3,10 @@
     {
       "id": "bm3x11z",
       "name": "The Ni"
+    },
+    {
+      "id": "cjibbb6",
+      "name": "Sell"
     }
   ],
   "teamBase": {
@@ -13,5 +17,5 @@
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:05:21.502Z"
+  "updatedAt": "2026-10-28T18:05:26.723Z"
 }
