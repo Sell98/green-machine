@@ -7,6 +7,10 @@
     {
       "id": "cjibbb6",
       "name": "Sell"
+    },
+    {
+      "id": "d0y33gu",
+      "name": "Pedrinho"
     }
   ],
   "teamBase": {
@@ -17,5 +21,5 @@
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:05:26.723Z"
+  "updatedAt": "2026-10-28T18:08:52.406Z"
 }
