@@ -27,6 +27,10 @@
     {
       "id": "unpfwjz",
       "name": "Guigo"
+    },
+    {
+      "id": "oknuflr",
+      "name": "Biel"
     }
   ],
   "teamBase": {
@@ -37,5 +41,5 @@
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:10:10.037Z"
+  "updatedAt": "2026-10-28T18:10:15.042Z"
 }
