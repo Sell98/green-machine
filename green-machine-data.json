@@ -87,18 +87,7 @@
       "scoreA": 0,
       "scoreB": 0,
       "date": "28/10/2026",
-      "events": [
-        {
-          "type": "sub",
-          "playerOutId": "bm3x11z",
-          "playerOutName": "The Ni",
-          "playerInId": "unpfwjz",
-          "playerInName": "Guigo",
-          "team": "A",
-          "teamName": "Time preto",
-          "minute": 0
-        }
-      ],
+      "events": [],
       "appearances": [
         {
           "id": "bm3x11z",
@@ -187,5 +176,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-28T18:54:07.154Z"
+  "updatedAt": "2026-10-28T18:54:18.414Z"
 }
