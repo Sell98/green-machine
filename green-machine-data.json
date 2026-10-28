@@ -47,6 +47,10 @@
     {
       "id": "k1hvukt",
       "name": "BG"
+    },
+    {
+      "id": "clmnts4",
+      "name": "Goleiro 1"
     }
   ],
   "teamBase": {
@@ -70,5 +74,5 @@
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:11:22.348Z"
+  "updatedAt": "2026-10-28T18:11:36.025Z"
 }
