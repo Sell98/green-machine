@@ -11,6 +11,10 @@
     {
       "id": "d0y33gu",
       "name": "Pedrinho"
+    },
+    {
+      "id": "423zamw",
+      "name": "Melim"
     }
   ],
   "teamBase": {
@@ -21,5 +25,5 @@
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:08:52.406Z"
+  "updatedAt": "2026-10-28T18:09:56.035Z"
 }
