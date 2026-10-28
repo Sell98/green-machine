@@ -1,10 +1,6 @@
 {
   "roster": [
     {
-      "id": "fqj4s21",
-      "name": "Mateus"
-    },
-    {
       "id": "bm3x11z",
       "name": "The Ni"
     }
@@ -13,11 +9,9 @@
     "label": "Agosto de 2026",
     "teamAName": "Time preto",
     "teamBName": "Time branco",
-    "assignments": {
-      "fqj4s21": "B"
-    }
+    "assignments": {}
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:05:19.617Z"
+  "updatedAt": "2026-10-28T18:05:21.502Z"
 }
