@@ -58,27 +58,12 @@
     }
   ],
   "teamBase": {
-    "label": "Agosto de 2026",
+    "label": "Outubro de 2026",
     "teamAName": "Time preto",
     "teamBName": "Time branco",
-    "assignments": {
-      "bm3x11z": "A",
-      "423zamw": "A",
-      "3efh4go": "A",
-      "cjibbb6": "A",
-      "mc0y4ln": "A",
-      "unpfwjz": "A",
-      "d0y33gu": "B",
-      "oknuflr": "B",
-      "s51fm51": "B",
-      "l3sb4rj": "B",
-      "xazy1ep": "B",
-      "k1hvukt": "B",
-      "clmnts4": "A",
-      "w9gyxew": "B"
-    }
+    "assignments": {}
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:54:20.304Z"
+  "updatedAt": "2026-10-28T18:54:47.321Z"
 }
