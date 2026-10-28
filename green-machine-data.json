@@ -51,6 +51,10 @@
     {
       "id": "clmnts4",
       "name": "Goleiro 1"
+    },
+    {
+      "id": "w9gyxew",
+      "name": "Goleiro 2"
     }
   ],
   "teamBase": {
@@ -74,5 +78,5 @@
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:11:36.025Z"
+  "updatedAt": "2026-10-28T18:11:41.854Z"
 }
