@@ -35,6 +35,10 @@
     {
       "id": "s51fm51",
       "name": "Oliveira"
+    },
+    {
+      "id": "l3sb4rj",
+      "name": "Caio"
     }
   ],
   "teamBase": {
@@ -45,5 +49,5 @@
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:10:20.034Z"
+  "updatedAt": "2026-10-28T18:10:25.975Z"
 }
