@@ -39,6 +39,10 @@
     {
       "id": "l3sb4rj",
       "name": "Caio"
+    },
+    {
+      "id": "xazy1ep",
+      "name": "TK"
     }
   ],
   "teamBase": {
@@ -49,5 +53,5 @@
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:10:25.975Z"
+  "updatedAt": "2026-10-28T18:10:38.038Z"
 }
