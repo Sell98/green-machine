@@ -1,10 +1,6 @@
 {
   "roster": [
     {
-      "id": "21mz0z0",
-      "name": "Lucas"
-    },
-    {
       "id": "fqj4s21",
       "name": "Mateus"
     }
@@ -14,11 +10,10 @@
     "teamAName": "Time preto",
     "teamBName": "Time branco",
     "assignments": {
-      "21mz0z0": "A",
       "fqj4s21": "B"
     }
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:01:37.632Z"
+  "updatedAt": "2026-10-28T18:05:11.212Z"
 }
