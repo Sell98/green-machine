@@ -31,6 +31,10 @@
     {
       "id": "oknuflr",
       "name": "Biel"
+    },
+    {
+      "id": "s51fm51",
+      "name": "Oliveira"
     }
   ],
   "teamBase": {
@@ -41,5 +45,5 @@
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:10:15.042Z"
+  "updatedAt": "2026-10-28T18:10:20.034Z"
 }
