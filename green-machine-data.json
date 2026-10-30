@@ -93,7 +93,7 @@
     "teamAName": "Time preto",
     "teamBName": "Time branco",
     "scoreA": 1,
-    "scoreB": 0,
+    "scoreB": 1,
     "squad": {
       "bm3x11z": {
         "team": "A",
@@ -200,6 +200,14 @@
         "team": "A",
         "teamName": "Time preto",
         "minute": 0
+      },
+      {
+        "type": "gol",
+        "playerId": "l3sb4rj",
+        "playerName": "Caio",
+        "team": "B",
+        "teamName": "Time branco",
+        "minute": 2
       }
     ],
     "startedAt": 1793322517473,
@@ -207,5 +215,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:09:25.493Z"
+  "updatedAt": "2026-10-30T01:10:43.396Z"
 }
