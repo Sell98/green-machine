@@ -139,7 +139,7 @@
       },
       "oknuflr": {
         "team": "B",
-        "status": "campo",
+        "status": "banco",
         "gk": false,
         "wasGk": false
       },
@@ -151,7 +151,7 @@
       },
       "l3sb4rj": {
         "team": "B",
-        "status": "banco",
+        "status": "campo",
         "gk": false,
         "wasGk": false
       },
@@ -305,6 +305,16 @@
         "team": "A",
         "teamName": "Time preto",
         "minute": 18
+      },
+      {
+        "type": "sub",
+        "playerOutId": "oknuflr",
+        "playerOutName": "Biel",
+        "playerInId": "l3sb4rj",
+        "playerInName": "Caio",
+        "team": "B",
+        "teamName": "Time branco",
+        "minute": 19
       }
     ],
     "startedAt": 1793322517473,
@@ -312,5 +322,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:27:50.115Z"
+  "updatedAt": "2026-10-30T01:27:51.795Z"
 }
