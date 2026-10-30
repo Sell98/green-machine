@@ -93,7 +93,7 @@
     "teamAName": "Time preto",
     "teamBName": "Time branco",
     "scoreA": 1,
-    "scoreB": 1,
+    "scoreB": 2,
     "squad": {
       "bm3x11z": {
         "team": "A",
@@ -208,6 +208,15 @@
         "team": "B",
         "teamName": "Time branco",
         "minute": 2
+      },
+      {
+        "type": "gol",
+        "playerId": "w9gyxew",
+        "playerName": "Goleiro 2",
+        "team": "B",
+        "teamName": "Time branco",
+        "minute": 3,
+        "gk": true
       }
     ],
     "startedAt": 1793322517473,
@@ -215,5 +224,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:10:43.396Z"
+  "updatedAt": "2026-10-30T01:12:33.407Z"
 }
