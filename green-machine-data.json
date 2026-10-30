@@ -92,7 +92,7 @@
     "id": "uoyuex8",
     "teamAName": "Time preto",
     "teamBName": "Time branco",
-    "scoreA": 0,
+    "scoreA": 1,
     "scoreB": 0,
     "squad": {
       "bm3x11z": {
@@ -192,7 +192,16 @@
         "wasGk": false
       }
     },
-    "events": [],
+    "events": [
+      {
+        "type": "gol",
+        "playerId": "423zamw",
+        "playerName": "Melim",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 0
+      }
+    ],
     "startedAt": 1793331353013,
     "elapsedMs": 0,
     "running": true
@@ -736,5 +745,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-30T03:35:54.018Z"
+  "updatedAt": "2026-10-30T03:35:59.300Z"
 }
