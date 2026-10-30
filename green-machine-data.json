@@ -121,7 +121,7 @@
       },
       "3efh4go": {
         "team": "A",
-        "status": "campo",
+        "status": "banco",
         "gk": false,
         "wasGk": false
       },
@@ -133,7 +133,7 @@
       },
       "unpfwjz": {
         "team": "A",
-        "status": "banco",
+        "status": "campo",
         "gk": false,
         "wasGk": false
       },
@@ -467,6 +467,16 @@
         "team": "B",
         "teamName": "Time branco",
         "minute": 33
+      },
+      {
+        "type": "sub",
+        "playerOutId": "3efh4go",
+        "playerOutName": "Ber",
+        "playerInId": "unpfwjz",
+        "playerInName": "Guigo",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 33
       }
     ],
     "startedAt": 1793322517473,
@@ -474,5 +484,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:42:22.904Z"
+  "updatedAt": "2026-10-30T01:42:25.262Z"
 }
