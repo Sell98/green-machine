@@ -103,7 +103,7 @@
       },
       "cjibbb6": {
         "team": "A",
-        "status": "banco",
+        "status": "campo",
         "gk": false,
         "wasGk": false
       },
@@ -133,7 +133,7 @@
       },
       "unpfwjz": {
         "team": "A",
-        "status": "campo",
+        "status": "banco",
         "gk": false,
         "wasGk": false
       },
@@ -197,6 +197,16 @@
         "type": "gol",
         "playerId": "423zamw",
         "playerName": "Melim",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 0
+      },
+      {
+        "type": "sub",
+        "playerOutId": "unpfwjz",
+        "playerOutName": "Guigo",
+        "playerInId": "cjibbb6",
+        "playerInName": "Sell",
         "team": "A",
         "teamName": "Time preto",
         "minute": 0
@@ -745,5 +755,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-30T03:36:04.268Z"
+  "updatedAt": "2026-10-30T03:36:06.700Z"
 }
