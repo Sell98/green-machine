@@ -97,7 +97,7 @@
     "squad": {
       "bm3x11z": {
         "team": "A",
-        "status": "campo",
+        "status": "banco",
         "gk": false,
         "wasGk": false
       },
@@ -121,7 +121,7 @@
       },
       "3efh4go": {
         "team": "A",
-        "status": "banco",
+        "status": "campo",
         "gk": false,
         "wasGk": false
       },
@@ -431,6 +431,16 @@
         "team": "B",
         "teamName": "Time branco",
         "minute": 27
+      },
+      {
+        "type": "sub",
+        "playerOutId": "bm3x11z",
+        "playerOutName": "The Ni",
+        "playerInId": "3efh4go",
+        "playerInName": "Ber",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 28
       }
     ],
     "startedAt": 1793322517473,
@@ -438,5 +448,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:37:10.851Z"
+  "updatedAt": "2026-10-30T01:37:13.705Z"
 }
