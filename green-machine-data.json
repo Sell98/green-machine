@@ -133,7 +133,7 @@
       },
       "unpfwjz": {
         "team": "A",
-        "status": "campo",
+        "status": "banco",
         "gk": false,
         "wasGk": false
       },
@@ -181,7 +181,7 @@
       },
       "7f70499": {
         "team": "A",
-        "status": "banco",
+        "status": "campo",
         "gk": false,
         "wasGk": false
       },
@@ -227,6 +227,16 @@
         "team": "A",
         "teamName": "Time preto",
         "minute": 8
+      },
+      {
+        "type": "sub",
+        "playerOutId": "unpfwjz",
+        "playerOutName": "Guigo",
+        "playerInId": "7f70499",
+        "playerInName": "Kelvin",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 8
       }
     ],
     "startedAt": 1793322517473,
@@ -234,5 +244,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:16:49.203Z"
+  "updatedAt": "2026-10-30T01:16:54.251Z"
 }
