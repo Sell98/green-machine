@@ -103,7 +103,7 @@
       },
       "cjibbb6": {
         "team": "A",
-        "status": "campo",
+        "status": "banco",
         "gk": false,
         "wasGk": false
       },
@@ -121,7 +121,7 @@
       },
       "3efh4go": {
         "team": "A",
-        "status": "banco",
+        "status": "campo",
         "gk": false,
         "wasGk": false
       },
@@ -535,6 +535,16 @@
         "team": "A",
         "teamName": "Time preto",
         "minute": 46
+      },
+      {
+        "type": "sub",
+        "playerOutId": "cjibbb6",
+        "playerOutName": "Sell",
+        "playerInId": "3efh4go",
+        "playerInName": "Ber",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 48
       }
     ],
     "startedAt": 1793322517473,
@@ -542,5 +552,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:56:53.917Z"
+  "updatedAt": "2026-10-30T01:56:57.810Z"
 }
