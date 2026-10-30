@@ -93,7 +93,7 @@
     "teamAName": "Time preto",
     "teamBName": "Time branco",
     "scoreA": 4,
-    "scoreB": 7,
+    "scoreB": 8,
     "squad": {
       "bm3x11z": {
         "team": "A",
@@ -373,6 +373,14 @@
         "team": "A",
         "teamName": "Time preto",
         "minute": 23
+      },
+      {
+        "type": "gol",
+        "playerId": "oknuflr",
+        "playerName": "Biel",
+        "team": "B",
+        "teamName": "Time branco",
+        "minute": 25
       }
     ],
     "startedAt": 1793322517473,
@@ -380,5 +388,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:31:44.604Z"
+  "updatedAt": "2026-10-30T01:33:52.045Z"
 }
