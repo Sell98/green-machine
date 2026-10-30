@@ -92,7 +92,7 @@
     "id": "rv799qo",
     "teamAName": "Time preto",
     "teamBName": "Time branco",
-    "scoreA": 1,
+    "scoreA": 2,
     "scoreB": 0,
     "squad": {
       "bm3x11z": {
@@ -200,6 +200,15 @@
         "team": "A",
         "teamName": "Time preto",
         "minute": 0
+      },
+      {
+        "type": "gol",
+        "playerId": "clmnts4",
+        "playerName": "Goleiro 1",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 0,
+        "gk": true
       }
     ],
     "startedAt": 1793331424555,
@@ -745,5 +754,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-30T03:37:10.127Z"
+  "updatedAt": "2026-10-30T03:37:12.398Z"
 }
