@@ -365,6 +365,14 @@
         "team": "A",
         "teamName": "Time preto",
         "minute": 23
+      },
+      {
+        "type": "assistencia",
+        "playerId": "bm3x11z",
+        "playerName": "The Ni",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 23
       }
     ],
     "startedAt": 1793322517473,
@@ -372,5 +380,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:31:41.950Z"
+  "updatedAt": "2026-10-30T01:31:44.604Z"
 }
