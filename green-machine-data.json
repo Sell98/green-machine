@@ -151,13 +151,13 @@
       },
       "l3sb4rj": {
         "team": "B",
-        "status": "banco",
+        "status": "campo",
         "gk": false,
         "wasGk": false
       },
       "xazy1ep": {
         "team": "B",
-        "status": "campo",
+        "status": "banco",
         "gk": false,
         "wasGk": false
       },
@@ -381,6 +381,16 @@
         "team": "B",
         "teamName": "Time branco",
         "minute": 25
+      },
+      {
+        "type": "sub",
+        "playerOutId": "xazy1ep",
+        "playerOutName": "TK",
+        "playerInId": "l3sb4rj",
+        "playerInName": "Caio",
+        "team": "B",
+        "teamName": "Time branco",
+        "minute": 25
       }
     ],
     "startedAt": 1793322517473,
@@ -388,5 +398,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:33:55.207Z"
+  "updatedAt": "2026-10-30T01:33:57.939Z"
 }
