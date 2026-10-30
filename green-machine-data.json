@@ -92,7 +92,7 @@
     "id": "a0a4k81",
     "teamAName": "Time preto",
     "teamBName": "Time branco",
-    "scoreA": 4,
+    "scoreA": 5,
     "scoreB": 8,
     "squad": {
       "bm3x11z": {
@@ -391,6 +391,14 @@
         "team": "B",
         "teamName": "Time branco",
         "minute": 25
+      },
+      {
+        "type": "gol",
+        "playerId": "7f70499",
+        "playerName": "Kelvin",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 25
       }
     ],
     "startedAt": 1793322517473,
@@ -398,5 +406,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:33:57.939Z"
+  "updatedAt": "2026-10-30T01:34:24.057Z"
 }
