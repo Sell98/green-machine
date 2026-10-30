@@ -88,157 +88,7 @@
       "w9gyxew": "B"
     }
   },
-  "activeMatch": {
-    "id": "rv799qo",
-    "teamAName": "Time preto",
-    "teamBName": "Time branco",
-    "scoreA": 5,
-    "scoreB": 0,
-    "squad": {
-      "bm3x11z": {
-        "team": "A",
-        "status": "banco",
-        "gk": false,
-        "wasGk": false
-      },
-      "cjibbb6": {
-        "team": "A",
-        "status": "banco",
-        "gk": false,
-        "wasGk": false
-      },
-      "d0y33gu": {
-        "team": "B",
-        "status": "banco",
-        "gk": false,
-        "wasGk": false
-      },
-      "423zamw": {
-        "team": "A",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "3efh4go": {
-        "team": "A",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "mc0y4ln": {
-        "team": "A",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "unpfwjz": {
-        "team": "A",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "oknuflr": {
-        "team": "B",
-        "status": "banco",
-        "gk": false,
-        "wasGk": false
-      },
-      "s51fm51": {
-        "team": "B",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "l3sb4rj": {
-        "team": "B",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "xazy1ep": {
-        "team": "B",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "k1hvukt": {
-        "team": "B",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "clmnts4": {
-        "team": "A",
-        "status": "campo",
-        "gk": true,
-        "wasGk": true
-      },
-      "w9gyxew": {
-        "team": "B",
-        "status": "campo",
-        "gk": true,
-        "wasGk": true
-      },
-      "7f70499": {
-        "team": "A",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "zmzjbj3": {
-        "team": "B",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      }
-    },
-    "events": [
-      {
-        "type": "gol",
-        "playerId": "unpfwjz",
-        "playerName": "Guigo",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 0
-      },
-      {
-        "type": "gol",
-        "playerId": "clmnts4",
-        "playerName": "Goleiro 1",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 0,
-        "gk": true
-      },
-      {
-        "type": "gol",
-        "playerId": "unpfwjz",
-        "playerName": "Guigo",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 0
-      },
-      {
-        "type": "gol",
-        "playerId": "unpfwjz",
-        "playerName": "Guigo",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 0
-      },
-      {
-        "type": "gol",
-        "playerId": "unpfwjz",
-        "playerName": "Guigo",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 0
-      }
-    ],
-    "startedAt": 1793331424555,
-    "elapsedMs": 0,
-    "running": true
-  },
+  "activeMatch": null,
   "history": [
     {
       "id": "a0a4k81",
@@ -776,7 +626,156 @@
           "gk": false
         }
       ]
+    },
+    {
+      "id": "rv799qo",
+      "teamAName": "Time preto",
+      "teamBName": "Time branco",
+      "scoreA": 5,
+      "scoreB": 0,
+      "date": "30/10/2026",
+      "events": [
+        {
+          "type": "gol",
+          "playerId": "unpfwjz",
+          "playerName": "Guigo",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 0
+        },
+        {
+          "type": "gol",
+          "playerId": "clmnts4",
+          "playerName": "Goleiro 1",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 0,
+          "gk": true
+        },
+        {
+          "type": "gol",
+          "playerId": "unpfwjz",
+          "playerName": "Guigo",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 0
+        },
+        {
+          "type": "gol",
+          "playerId": "unpfwjz",
+          "playerName": "Guigo",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 0
+        },
+        {
+          "type": "gol",
+          "playerId": "unpfwjz",
+          "playerName": "Guigo",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 0
+        }
+      ],
+      "appearances": [
+        {
+          "id": "bm3x11z",
+          "name": "The Ni",
+          "team": "A",
+          "gk": false
+        },
+        {
+          "id": "cjibbb6",
+          "name": "Sell",
+          "team": "A",
+          "gk": false
+        },
+        {
+          "id": "d0y33gu",
+          "name": "Pedrinho",
+          "team": "B",
+          "gk": false
+        },
+        {
+          "id": "423zamw",
+          "name": "Melim",
+          "team": "A",
+          "gk": false
+        },
+        {
+          "id": "3efh4go",
+          "name": "Ber",
+          "team": "A",
+          "gk": false
+        },
+        {
+          "id": "mc0y4ln",
+          "name": "Ploencio",
+          "team": "A",
+          "gk": false
+        },
+        {
+          "id": "unpfwjz",
+          "name": "Guigo",
+          "team": "A",
+          "gk": false
+        },
+        {
+          "id": "oknuflr",
+          "name": "Biel",
+          "team": "B",
+          "gk": false
+        },
+        {
+          "id": "s51fm51",
+          "name": "Oliveira",
+          "team": "B",
+          "gk": false
+        },
+        {
+          "id": "l3sb4rj",
+          "name": "Caio",
+          "team": "B",
+          "gk": false
+        },
+        {
+          "id": "xazy1ep",
+          "name": "TK",
+          "team": "B",
+          "gk": false
+        },
+        {
+          "id": "k1hvukt",
+          "name": "BG",
+          "team": "B",
+          "gk": false
+        },
+        {
+          "id": "clmnts4",
+          "name": "Goleiro 1",
+          "team": "A",
+          "gk": true
+        },
+        {
+          "id": "w9gyxew",
+          "name": "Goleiro 2",
+          "team": "B",
+          "gk": true
+        },
+        {
+          "id": "7f70499",
+          "name": "Kelvin",
+          "team": "A",
+          "gk": false
+        },
+        {
+          "id": "zmzjbj3",
+          "name": "Quint",
+          "team": "B",
+          "gk": false
+        }
+      ]
     }
   ],
-  "updatedAt": "2026-10-30T03:37:17.122Z"
+  "updatedAt": "2026-10-30T03:37:18.922Z"
 }
