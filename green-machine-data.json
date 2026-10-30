@@ -97,7 +97,7 @@
     "squad": {
       "bm3x11z": {
         "team": "A",
-        "status": "banco",
+        "status": "campo",
         "gk": false,
         "wasGk": false
       },
@@ -127,7 +127,7 @@
       },
       "mc0y4ln": {
         "team": "A",
-        "status": "campo",
+        "status": "banco",
         "gk": false,
         "wasGk": false
       },
@@ -485,6 +485,16 @@
         "team": "A",
         "teamName": "Time preto",
         "minute": 35
+      },
+      {
+        "type": "sub",
+        "playerOutId": "mc0y4ln",
+        "playerOutName": "Ploencio",
+        "playerInId": "bm3x11z",
+        "playerInName": "The Ni",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 37
       }
     ],
     "startedAt": 1793322517473,
@@ -492,5 +502,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:46:28.513Z"
+  "updatedAt": "2026-10-30T01:46:31.024Z"
 }
