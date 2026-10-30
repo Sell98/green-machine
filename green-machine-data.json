@@ -92,7 +92,7 @@
     "id": "rv799qo",
     "teamAName": "Time preto",
     "teamBName": "Time branco",
-    "scoreA": 2,
+    "scoreA": 3,
     "scoreB": 0,
     "squad": {
       "bm3x11z": {
@@ -209,6 +209,14 @@
         "teamName": "Time preto",
         "minute": 0,
         "gk": true
+      },
+      {
+        "type": "gol",
+        "playerId": "unpfwjz",
+        "playerName": "Guigo",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 0
       }
     ],
     "startedAt": 1793331424555,
@@ -754,5 +762,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-30T03:37:12.398Z"
+  "updatedAt": "2026-10-30T03:37:14.674Z"
 }
