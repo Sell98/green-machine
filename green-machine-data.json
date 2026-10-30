@@ -63,6 +63,10 @@
     {
       "id": "7f70499",
       "name": "Kelvin"
+    },
+    {
+      "id": "zmzjbj3",
+      "name": "Quint"
     }
   ],
   "teamBase": {
@@ -73,5 +77,5 @@
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-30T00:45:09.654Z"
+  "updatedAt": "2026-10-30T00:45:15.594Z"
 }
