@@ -88,7 +88,115 @@
       "w9gyxew": "B"
     }
   },
-  "activeMatch": null,
+  "activeMatch": {
+    "id": "rv799qo",
+    "teamAName": "Time preto",
+    "teamBName": "Time branco",
+    "scoreA": 0,
+    "scoreB": 0,
+    "squad": {
+      "bm3x11z": {
+        "team": "A",
+        "status": "banco",
+        "gk": false,
+        "wasGk": false
+      },
+      "cjibbb6": {
+        "team": "A",
+        "status": "banco",
+        "gk": false,
+        "wasGk": false
+      },
+      "d0y33gu": {
+        "team": "B",
+        "status": "banco",
+        "gk": false,
+        "wasGk": false
+      },
+      "423zamw": {
+        "team": "A",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "3efh4go": {
+        "team": "A",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "mc0y4ln": {
+        "team": "A",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "unpfwjz": {
+        "team": "A",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "oknuflr": {
+        "team": "B",
+        "status": "banco",
+        "gk": false,
+        "wasGk": false
+      },
+      "s51fm51": {
+        "team": "B",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "l3sb4rj": {
+        "team": "B",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "xazy1ep": {
+        "team": "B",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "k1hvukt": {
+        "team": "B",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "clmnts4": {
+        "team": "A",
+        "status": "campo",
+        "gk": true,
+        "wasGk": true
+      },
+      "w9gyxew": {
+        "team": "B",
+        "status": "campo",
+        "gk": true,
+        "wasGk": true
+      },
+      "7f70499": {
+        "team": "A",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      },
+      "zmzjbj3": {
+        "team": "B",
+        "status": "campo",
+        "gk": false,
+        "wasGk": false
+      }
+    },
+    "events": [],
+    "startedAt": 1793331424555,
+    "elapsedMs": 0,
+    "running": true
+  },
   "history": [
     {
       "id": "a0a4k81",
@@ -628,5 +736,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-30T03:36:23.192Z"
+  "updatedAt": "2026-10-30T03:37:05.560Z"
 }
