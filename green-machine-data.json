@@ -88,545 +88,545 @@
       "w9gyxew": "B"
     }
   },
-  "activeMatch": {
-    "id": "a0a4k81",
-    "teamAName": "Time preto",
-    "teamBName": "Time branco",
-    "scoreA": 10,
-    "scoreB": 18,
-    "squad": {
-      "bm3x11z": {
-        "team": "A",
-        "status": "banco",
-        "gk": false,
-        "wasGk": false
-      },
-      "cjibbb6": {
-        "team": "A",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "d0y33gu": {
-        "team": "B",
-        "status": "banco",
-        "gk": false,
-        "wasGk": false
-      },
-      "423zamw": {
-        "team": "A",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "3efh4go": {
-        "team": "A",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "mc0y4ln": {
-        "team": "A",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "unpfwjz": {
-        "team": "A",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "oknuflr": {
-        "team": "B",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "s51fm51": {
-        "team": "B",
-        "status": "banco",
-        "gk": false,
-        "wasGk": false
-      },
-      "l3sb4rj": {
-        "team": "B",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "xazy1ep": {
-        "team": "B",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "k1hvukt": {
-        "team": "B",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      },
-      "clmnts4": {
-        "team": "A",
-        "status": "campo",
-        "gk": true,
-        "wasGk": true
-      },
-      "w9gyxew": {
-        "team": "B",
-        "status": "campo",
-        "gk": true,
-        "wasGk": true
-      },
-      "7f70499": {
-        "team": "A",
-        "status": "banco",
-        "gk": false,
-        "wasGk": false
-      },
-      "zmzjbj3": {
-        "team": "B",
-        "status": "campo",
-        "gk": false,
-        "wasGk": false
-      }
-    },
-    "events": [
-      {
-        "type": "gol",
-        "playerId": "423zamw",
-        "playerName": "Melim",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 0
-      },
-      {
-        "type": "gol",
-        "playerId": "l3sb4rj",
-        "playerName": "Caio",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 2
-      },
-      {
-        "type": "gol",
-        "playerId": "w9gyxew",
-        "playerName": "Goleiro 2",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 3,
-        "gk": true
-      },
-      {
-        "type": "sub",
-        "playerOutId": "mc0y4ln",
-        "playerOutName": "Ploencio",
-        "playerInId": "cjibbb6",
-        "playerInName": "Sell",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 8
-      },
-      {
-        "type": "sub",
-        "playerOutId": "unpfwjz",
-        "playerOutName": "Guigo",
-        "playerInId": "7f70499",
-        "playerInName": "Kelvin",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 8
-      },
-      {
-        "type": "gol",
-        "playerId": "l3sb4rj",
-        "playerName": "Caio",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 9
-      },
-      {
-        "type": "gol",
-        "playerId": "oknuflr",
-        "playerName": "Biel",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 11
-      },
-      {
-        "type": "assistencia",
-        "playerId": "k1hvukt",
-        "playerName": "BG",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 11
-      },
-      {
-        "type": "sub",
-        "playerOutId": "l3sb4rj",
-        "playerOutName": "Caio",
-        "playerInId": "xazy1ep",
-        "playerInName": "TK",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 11
-      },
-      {
-        "type": "gol",
-        "playerId": "oknuflr",
-        "playerName": "Biel",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 17
-      },
-      {
-        "type": "gol",
-        "playerId": "zmzjbj3",
-        "playerName": "Quint",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 17
-      },
-      {
-        "type": "assistencia",
-        "playerId": "oknuflr",
-        "playerName": "Biel",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 17
-      },
-      {
-        "type": "sub",
-        "playerOutId": "3efh4go",
-        "playerOutName": "Ber",
-        "playerInId": "mc0y4ln",
-        "playerInName": "Ploencio",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 18
-      },
-      {
-        "type": "sub",
-        "playerOutId": "oknuflr",
-        "playerOutName": "Biel",
-        "playerInId": "l3sb4rj",
-        "playerInName": "Caio",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 19
-      },
-      {
-        "type": "gol",
-        "playerId": "cjibbb6",
-        "playerName": "Sell",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 19
-      },
-      {
-        "type": "gol",
-        "playerId": "k1hvukt",
-        "playerName": "BG",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 20
-      },
-      {
-        "type": "gol",
-        "playerId": "cjibbb6",
-        "playerName": "Sell",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 21
-      },
-      {
-        "type": "assistencia",
-        "playerId": "7f70499",
-        "playerName": "Kelvin",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 21
-      },
-      {
-        "type": "sub",
-        "playerOutId": "l3sb4rj",
-        "playerOutName": "Caio",
-        "playerInId": "oknuflr",
-        "playerInName": "Biel",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 22
-      },
-      {
-        "type": "gol",
-        "playerId": "cjibbb6",
-        "playerName": "Sell",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 23
-      },
-      {
-        "type": "assistencia",
-        "playerId": "bm3x11z",
-        "playerName": "The Ni",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 23
-      },
-      {
-        "type": "gol",
-        "playerId": "oknuflr",
-        "playerName": "Biel",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 25
-      },
-      {
-        "type": "sub",
-        "playerOutId": "xazy1ep",
-        "playerOutName": "TK",
-        "playerInId": "l3sb4rj",
-        "playerInName": "Caio",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 25
-      },
-      {
-        "type": "gol",
-        "playerId": "7f70499",
-        "playerName": "Kelvin",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 25
-      },
-      {
-        "type": "gol",
-        "playerId": "cjibbb6",
-        "playerName": "Sell",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 26
-      },
-      {
-        "type": "assistencia",
-        "playerId": "7f70499",
-        "playerName": "Kelvin",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 26
-      },
-      {
-        "type": "gol",
-        "playerId": "oknuflr",
-        "playerName": "Biel",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 27
-      },
-      {
-        "type": "assistencia",
-        "playerId": "k1hvukt",
-        "playerName": "BG",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 27
-      },
-      {
-        "type": "sub",
-        "playerOutId": "bm3x11z",
-        "playerOutName": "The Ni",
-        "playerInId": "3efh4go",
-        "playerInName": "Ber",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 28
-      },
-      {
-        "type": "gol",
-        "playerId": "zmzjbj3",
-        "playerName": "Quint",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 29
-      },
-      {
-        "type": "gol",
-        "playerId": "oknuflr",
-        "playerName": "Biel",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 31
-      },
-      {
-        "type": "sub",
-        "playerOutId": "d0y33gu",
-        "playerOutName": "Pedrinho",
-        "playerInId": "xazy1ep",
-        "playerInName": "TK",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 33
-      },
-      {
-        "type": "sub",
-        "playerOutId": "3efh4go",
-        "playerOutName": "Ber",
-        "playerInId": "unpfwjz",
-        "playerInName": "Guigo",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 33
-      },
-      {
-        "type": "gol",
-        "playerId": "cjibbb6",
-        "playerName": "Sell",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 35
-      },
-      {
-        "type": "sub",
-        "playerOutId": "mc0y4ln",
-        "playerOutName": "Ploencio",
-        "playerInId": "bm3x11z",
-        "playerInName": "The Ni",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 37
-      },
-      {
-        "type": "gol",
-        "playerId": "oknuflr",
-        "playerName": "Biel",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 39
-      },
-      {
-        "type": "gol",
-        "playerId": "oknuflr",
-        "playerName": "Biel",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 40
-      },
-      {
-        "type": "gol",
-        "playerId": "k1hvukt",
-        "playerName": "BG",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 42
-      },
-      {
-        "type": "gol",
-        "playerId": "unpfwjz",
-        "playerName": "Guigo",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 43
-      },
-      {
-        "type": "gol",
-        "playerId": "cjibbb6",
-        "playerName": "Sell",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 46
-      },
-      {
-        "type": "sub",
-        "playerOutId": "cjibbb6",
-        "playerOutName": "Sell",
-        "playerInId": "3efh4go",
-        "playerInName": "Ber",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 48
-      },
-      {
-        "type": "sub",
-        "playerOutId": "7f70499",
-        "playerOutName": "Kelvin",
-        "playerInId": "mc0y4ln",
-        "playerInName": "Ploencio",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 48
-      },
-      {
-        "type": "gol",
-        "playerId": "bm3x11z",
-        "playerName": "The Ni",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 49
-      },
-      {
-        "type": "sub",
-        "playerOutId": "bm3x11z",
-        "playerOutName": "The Ni",
-        "playerInId": "cjibbb6",
-        "playerInName": "Sell",
-        "team": "A",
-        "teamName": "Time preto",
-        "minute": 50
-      },
-      {
-        "type": "gol",
-        "playerId": "oknuflr",
-        "playerName": "Biel",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 52
-      },
-      {
-        "type": "assistencia",
-        "playerId": "xazy1ep",
-        "playerName": "TK",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 52
-      },
-      {
-        "type": "gol",
-        "playerId": "l3sb4rj",
-        "playerName": "Caio",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 54
-      },
-      {
-        "type": "gol",
-        "playerId": "zmzjbj3",
-        "playerName": "Quint",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 55
-      },
-      {
-        "type": "assistencia",
-        "playerId": "oknuflr",
-        "playerName": "Biel",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 55
-      },
-      {
-        "type": "gol",
-        "playerId": "k1hvukt",
-        "playerName": "BG",
-        "team": "B",
-        "teamName": "Time branco",
-        "minute": 56
-      }
-    ],
-    "startedAt": 1793322517473,
-    "elapsedMs": 0,
-    "running": true
-  },
-  "history": [],
-  "updatedAt": "2026-10-30T02:05:22.790Z"
+  "activeMatch": null,
+  "history": [
+    {
+      "id": "a0a4k81",
+      "teamAName": "Time preto",
+      "teamBName": "Time branco",
+      "scoreA": 10,
+      "scoreB": 18,
+      "date": "29/10/2026",
+      "events": [
+        {
+          "type": "gol",
+          "playerId": "423zamw",
+          "playerName": "Melim",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 0
+        },
+        {
+          "type": "gol",
+          "playerId": "l3sb4rj",
+          "playerName": "Caio",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 2
+        },
+        {
+          "type": "gol",
+          "playerId": "w9gyxew",
+          "playerName": "Goleiro 2",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 3,
+          "gk": true
+        },
+        {
+          "type": "sub",
+          "playerOutId": "mc0y4ln",
+          "playerOutName": "Ploencio",
+          "playerInId": "cjibbb6",
+          "playerInName": "Sell",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 8
+        },
+        {
+          "type": "sub",
+          "playerOutId": "unpfwjz",
+          "playerOutName": "Guigo",
+          "playerInId": "7f70499",
+          "playerInName": "Kelvin",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 8
+        },
+        {
+          "type": "gol",
+          "playerId": "l3sb4rj",
+          "playerName": "Caio",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 9
+        },
+        {
+          "type": "gol",
+          "playerId": "oknuflr",
+          "playerName": "Biel",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 11
+        },
+        {
+          "type": "assistencia",
+          "playerId": "k1hvukt",
+          "playerName": "BG",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 11
+        },
+        {
+          "type": "sub",
+          "playerOutId": "l3sb4rj",
+          "playerOutName": "Caio",
+          "playerInId": "xazy1ep",
+          "playerInName": "TK",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 11
+        },
+        {
+          "type": "gol",
+          "playerId": "oknuflr",
+          "playerName": "Biel",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 17
+        },
+        {
+          "type": "gol",
+          "playerId": "zmzjbj3",
+          "playerName": "Quint",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 17
+        },
+        {
+          "type": "assistencia",
+          "playerId": "oknuflr",
+          "playerName": "Biel",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 17
+        },
+        {
+          "type": "sub",
+          "playerOutId": "3efh4go",
+          "playerOutName": "Ber",
+          "playerInId": "mc0y4ln",
+          "playerInName": "Ploencio",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 18
+        },
+        {
+          "type": "sub",
+          "playerOutId": "oknuflr",
+          "playerOutName": "Biel",
+          "playerInId": "l3sb4rj",
+          "playerInName": "Caio",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 19
+        },
+        {
+          "type": "gol",
+          "playerId": "cjibbb6",
+          "playerName": "Sell",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 19
+        },
+        {
+          "type": "gol",
+          "playerId": "k1hvukt",
+          "playerName": "BG",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 20
+        },
+        {
+          "type": "gol",
+          "playerId": "cjibbb6",
+          "playerName": "Sell",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 21
+        },
+        {
+          "type": "assistencia",
+          "playerId": "7f70499",
+          "playerName": "Kelvin",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 21
+        },
+        {
+          "type": "sub",
+          "playerOutId": "l3sb4rj",
+          "playerOutName": "Caio",
+          "playerInId": "oknuflr",
+          "playerInName": "Biel",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 22
+        },
+        {
+          "type": "gol",
+          "playerId": "cjibbb6",
+          "playerName": "Sell",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 23
+        },
+        {
+          "type": "assistencia",
+          "playerId": "bm3x11z",
+          "playerName": "The Ni",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 23
+        },
+        {
+          "type": "gol",
+          "playerId": "oknuflr",
+          "playerName": "Biel",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 25
+        },
+        {
+          "type": "sub",
+          "playerOutId": "xazy1ep",
+          "playerOutName": "TK",
+          "playerInId": "l3sb4rj",
+          "playerInName": "Caio",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 25
+        },
+        {
+          "type": "gol",
+          "playerId": "7f70499",
+          "playerName": "Kelvin",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 25
+        },
+        {
+          "type": "gol",
+          "playerId": "cjibbb6",
+          "playerName": "Sell",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 26
+        },
+        {
+          "type": "assistencia",
+          "playerId": "7f70499",
+          "playerName": "Kelvin",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 26
+        },
+        {
+          "type": "gol",
+          "playerId": "oknuflr",
+          "playerName": "Biel",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 27
+        },
+        {
+          "type": "assistencia",
+          "playerId": "k1hvukt",
+          "playerName": "BG",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 27
+        },
+        {
+          "type": "sub",
+          "playerOutId": "bm3x11z",
+          "playerOutName": "The Ni",
+          "playerInId": "3efh4go",
+          "playerInName": "Ber",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 28
+        },
+        {
+          "type": "gol",
+          "playerId": "zmzjbj3",
+          "playerName": "Quint",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 29
+        },
+        {
+          "type": "gol",
+          "playerId": "oknuflr",
+          "playerName": "Biel",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 31
+        },
+        {
+          "type": "sub",
+          "playerOutId": "d0y33gu",
+          "playerOutName": "Pedrinho",
+          "playerInId": "xazy1ep",
+          "playerInName": "TK",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 33
+        },
+        {
+          "type": "sub",
+          "playerOutId": "3efh4go",
+          "playerOutName": "Ber",
+          "playerInId": "unpfwjz",
+          "playerInName": "Guigo",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 33
+        },
+        {
+          "type": "gol",
+          "playerId": "cjibbb6",
+          "playerName": "Sell",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 35
+        },
+        {
+          "type": "sub",
+          "playerOutId": "mc0y4ln",
+          "playerOutName": "Ploencio",
+          "playerInId": "bm3x11z",
+          "playerInName": "The Ni",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 37
+        },
+        {
+          "type": "gol",
+          "playerId": "oknuflr",
+          "playerName": "Biel",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 39
+        },
+        {
+          "type": "gol",
+          "playerId": "oknuflr",
+          "playerName": "Biel",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 40
+        },
+        {
+          "type": "gol",
+          "playerId": "k1hvukt",
+          "playerName": "BG",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 42
+        },
+        {
+          "type": "gol",
+          "playerId": "unpfwjz",
+          "playerName": "Guigo",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 43
+        },
+        {
+          "type": "gol",
+          "playerId": "cjibbb6",
+          "playerName": "Sell",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 46
+        },
+        {
+          "type": "sub",
+          "playerOutId": "cjibbb6",
+          "playerOutName": "Sell",
+          "playerInId": "3efh4go",
+          "playerInName": "Ber",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 48
+        },
+        {
+          "type": "sub",
+          "playerOutId": "7f70499",
+          "playerOutName": "Kelvin",
+          "playerInId": "mc0y4ln",
+          "playerInName": "Ploencio",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 48
+        },
+        {
+          "type": "gol",
+          "playerId": "bm3x11z",
+          "playerName": "The Ni",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 49
+        },
+        {
+          "type": "sub",
+          "playerOutId": "bm3x11z",
+          "playerOutName": "The Ni",
+          "playerInId": "cjibbb6",
+          "playerInName": "Sell",
+          "team": "A",
+          "teamName": "Time preto",
+          "minute": 50
+        },
+        {
+          "type": "gol",
+          "playerId": "oknuflr",
+          "playerName": "Biel",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 52
+        },
+        {
+          "type": "assistencia",
+          "playerId": "xazy1ep",
+          "playerName": "TK",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 52
+        },
+        {
+          "type": "gol",
+          "playerId": "l3sb4rj",
+          "playerName": "Caio",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 54
+        },
+        {
+          "type": "gol",
+          "playerId": "zmzjbj3",
+          "playerName": "Quint",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 55
+        },
+        {
+          "type": "assistencia",
+          "playerId": "oknuflr",
+          "playerName": "Biel",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 55
+        },
+        {
+          "type": "gol",
+          "playerId": "k1hvukt",
+          "playerName": "BG",
+          "team": "B",
+          "teamName": "Time branco",
+          "minute": 56
+        }
+      ],
+      "appearances": [
+        {
+          "id": "bm3x11z",
+          "name": "The Ni",
+          "team": "A",
+          "gk": false
+        },
+        {
+          "id": "cjibbb6",
+          "name": "Sell",
+          "team": "A",
+          "gk": false
+        },
+        {
+          "id": "d0y33gu",
+          "name": "Pedrinho",
+          "team": "B",
+          "gk": false
+        },
+        {
+          "id": "423zamw",
+          "name": "Melim",
+          "team": "A",
+          "gk": false
+        },
+        {
+          "id": "3efh4go",
+          "name": "Ber",
+          "team": "A",
+          "gk": false
+        },
+        {
+          "id": "mc0y4ln",
+          "name": "Ploencio",
+          "team": "A",
+          "gk": false
+        },
+        {
+          "id": "unpfwjz",
+          "name": "Guigo",
+          "team": "A",
+          "gk": false
+        },
+        {
+          "id": "oknuflr",
+          "name": "Biel",
+          "team": "B",
+          "gk": false
+        },
+        {
+          "id": "s51fm51",
+          "name": "Oliveira",
+          "team": "B",
+          "gk": false
+        },
+        {
+          "id": "l3sb4rj",
+          "name": "Caio",
+          "team": "B",
+          "gk": false
+        },
+        {
+          "id": "xazy1ep",
+          "name": "TK",
+          "team": "B",
+          "gk": false
+        },
+        {
+          "id": "k1hvukt",
+          "name": "BG",
+          "team": "B",
+          "gk": false
+        },
+        {
+          "id": "clmnts4",
+          "name": "Goleiro 1",
+          "team": "A",
+          "gk": true
+        },
+        {
+          "id": "w9gyxew",
+          "name": "Goleiro 2",
+          "team": "B",
+          "gk": true
+        },
+        {
+          "id": "7f70499",
+          "name": "Kelvin",
+          "team": "A",
+          "gk": false
+        },
+        {
+          "id": "zmzjbj3",
+          "name": "Quint",
+          "team": "B",
+          "gk": false
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-10-30T02:05:30.371Z"
 }
