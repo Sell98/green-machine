@@ -93,7 +93,7 @@
     "teamAName": "Time preto",
     "teamBName": "Time branco",
     "scoreA": 10,
-    "scoreB": 16,
+    "scoreB": 17,
     "squad": {
       "bm3x11z": {
         "team": "A",
@@ -597,6 +597,14 @@
         "team": "B",
         "teamName": "Time branco",
         "minute": 54
+      },
+      {
+        "type": "gol",
+        "playerId": "zmzjbj3",
+        "playerName": "Quint",
+        "team": "B",
+        "teamName": "Time branco",
+        "minute": 55
       }
     ],
     "startedAt": 1793322517473,
@@ -604,5 +612,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T02:03:14.644Z"
+  "updatedAt": "2026-10-30T02:04:20.267Z"
 }
