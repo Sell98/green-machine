@@ -103,7 +103,7 @@
       },
       "cjibbb6": {
         "team": "A",
-        "status": "banco",
+        "status": "campo",
         "gk": false,
         "wasGk": false
       },
@@ -127,7 +127,7 @@
       },
       "mc0y4ln": {
         "team": "A",
-        "status": "campo",
+        "status": "banco",
         "gk": false,
         "wasGk": false
       },
@@ -217,6 +217,16 @@
         "teamName": "Time branco",
         "minute": 3,
         "gk": true
+      },
+      {
+        "type": "sub",
+        "playerOutId": "mc0y4ln",
+        "playerOutName": "Ploencio",
+        "playerInId": "cjibbb6",
+        "playerInName": "Sell",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 8
       }
     ],
     "startedAt": 1793322517473,
@@ -224,5 +234,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:16:43.753Z"
+  "updatedAt": "2026-10-30T01:16:46.345Z"
 }
