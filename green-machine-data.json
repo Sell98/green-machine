@@ -253,6 +253,14 @@
         "team": "B",
         "teamName": "Time branco",
         "minute": 11
+      },
+      {
+        "type": "assistencia",
+        "playerId": "k1hvukt",
+        "playerName": "BG",
+        "team": "B",
+        "teamName": "Time branco",
+        "minute": 11
       }
     ],
     "startedAt": 1793322517473,
@@ -260,5 +268,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:20:28.229Z"
+  "updatedAt": "2026-10-30T01:20:31.607Z"
 }
