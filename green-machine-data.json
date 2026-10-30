@@ -339,6 +339,14 @@
         "team": "A",
         "teamName": "Time preto",
         "minute": 21
+      },
+      {
+        "type": "assistencia",
+        "playerId": "7f70499",
+        "playerName": "Kelvin",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 21
       }
     ],
     "startedAt": 1793322517473,
@@ -346,5 +354,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:30:26.791Z"
+  "updatedAt": "2026-10-30T01:30:29.565Z"
 }
