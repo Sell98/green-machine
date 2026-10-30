@@ -92,7 +92,7 @@
     "id": "a0a4k81",
     "teamAName": "Time preto",
     "teamBName": "Time branco",
-    "scoreA": 9,
+    "scoreA": 10,
     "scoreB": 14,
     "squad": {
       "bm3x11z": {
@@ -555,6 +555,14 @@
         "team": "A",
         "teamName": "Time preto",
         "minute": 48
+      },
+      {
+        "type": "gol",
+        "playerId": "bm3x11z",
+        "playerName": "The Ni",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 49
       }
     ],
     "startedAt": 1793322517473,
@@ -562,5 +570,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:57:03.345Z"
+  "updatedAt": "2026-10-30T01:57:48.563Z"
 }
