@@ -92,7 +92,7 @@
     "id": "puzg69l",
     "teamAName": "Time preto",
     "teamBName": "Time branco",
-    "scoreA": 0,
+    "scoreA": 1,
     "scoreB": 0,
     "squad": {
       "bm3x11z": {
@@ -192,7 +192,16 @@
         "wasGk": false
       }
     },
-    "events": [],
+    "events": [
+      {
+        "type": "gol",
+        "playerId": "3efh4go",
+        "playerName": "Ber",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 0
+      }
+    ],
     "startedAt": 1793331224748,
     "elapsedMs": 0,
     "running": true
@@ -736,5 +745,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-30T03:33:45.753Z"
+  "updatedAt": "2026-10-30T03:33:49.736Z"
 }
