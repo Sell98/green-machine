@@ -200,6 +200,14 @@
         "team": "A",
         "teamName": "Time preto",
         "minute": 0
+      },
+      {
+        "type": "assistencia",
+        "playerId": "3efh4go",
+        "playerName": "Ber",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 0
       }
     ],
     "startedAt": 1793331224748,
@@ -745,5 +753,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-30T03:33:49.736Z"
+  "updatedAt": "2026-10-30T03:33:52.022Z"
 }
