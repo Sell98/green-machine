@@ -127,7 +127,7 @@
       },
       "mc0y4ln": {
         "team": "A",
-        "status": "banco",
+        "status": "campo",
         "gk": false,
         "wasGk": false
       },
@@ -181,7 +181,7 @@
       },
       "7f70499": {
         "team": "A",
-        "status": "campo",
+        "status": "banco",
         "gk": false,
         "wasGk": false
       },
@@ -545,6 +545,16 @@
         "team": "A",
         "teamName": "Time preto",
         "minute": 48
+      },
+      {
+        "type": "sub",
+        "playerOutId": "7f70499",
+        "playerOutName": "Kelvin",
+        "playerInId": "mc0y4ln",
+        "playerInName": "Ploencio",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 48
       }
     ],
     "startedAt": 1793322517473,
@@ -552,5 +562,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:57:00.332Z"
+  "updatedAt": "2026-10-30T01:57:03.345Z"
 }
