@@ -55,6 +55,10 @@
     {
       "id": "w9gyxew",
       "name": "Goleiro 2"
+    },
+    {
+      "id": "rpb7say",
+      "name": "PP"
     }
   ],
   "teamBase": {
@@ -65,5 +69,5 @@
   },
   "activeMatch": null,
   "history": [],
-  "updatedAt": "2026-10-28T18:54:47.321Z"
+  "updatedAt": "2026-10-30T00:45:02.762Z"
 }
