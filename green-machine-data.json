@@ -97,13 +97,13 @@
     "squad": {
       "bm3x11z": {
         "team": "A",
-        "status": "campo",
+        "status": "banco",
         "gk": false,
         "wasGk": false
       },
       "cjibbb6": {
         "team": "A",
-        "status": "banco",
+        "status": "campo",
         "gk": false,
         "wasGk": false
       },
@@ -563,6 +563,16 @@
         "team": "A",
         "teamName": "Time preto",
         "minute": 49
+      },
+      {
+        "type": "sub",
+        "playerOutId": "bm3x11z",
+        "playerOutName": "The Ni",
+        "playerInId": "cjibbb6",
+        "playerInName": "Sell",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 50
       }
     ],
     "startedAt": 1793322517473,
@@ -570,5 +580,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:59:28.183Z"
+  "updatedAt": "2026-10-30T01:59:30.991Z"
 }
