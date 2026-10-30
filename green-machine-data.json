@@ -109,7 +109,7 @@
       },
       "d0y33gu": {
         "team": "B",
-        "status": "campo",
+        "status": "banco",
         "gk": false,
         "wasGk": false
       },
@@ -157,7 +157,7 @@
       },
       "xazy1ep": {
         "team": "B",
-        "status": "banco",
+        "status": "campo",
         "gk": false,
         "wasGk": false
       },
@@ -457,6 +457,16 @@
         "team": "B",
         "teamName": "Time branco",
         "minute": 31
+      },
+      {
+        "type": "sub",
+        "playerOutId": "d0y33gu",
+        "playerOutName": "Pedrinho",
+        "playerInId": "xazy1ep",
+        "playerInName": "TK",
+        "team": "B",
+        "teamName": "Time branco",
+        "minute": 33
       }
     ],
     "startedAt": 1793322517473,
@@ -464,5 +474,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:40:21.781Z"
+  "updatedAt": "2026-10-30T01:41:57.881Z"
 }
