@@ -121,13 +121,13 @@
       },
       "3efh4go": {
         "team": "A",
-        "status": "campo",
+        "status": "banco",
         "gk": false,
         "wasGk": false
       },
       "mc0y4ln": {
         "team": "A",
-        "status": "banco",
+        "status": "campo",
         "gk": false,
         "wasGk": false
       },
@@ -295,6 +295,16 @@
         "team": "B",
         "teamName": "Time branco",
         "minute": 17
+      },
+      {
+        "type": "sub",
+        "playerOutId": "3efh4go",
+        "playerOutName": "Ber",
+        "playerInId": "mc0y4ln",
+        "playerInName": "Ploencio",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 18
       }
     ],
     "startedAt": 1793322517473,
@@ -302,5 +312,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:27:33.556Z"
+  "updatedAt": "2026-10-30T01:27:37.268Z"
 }
