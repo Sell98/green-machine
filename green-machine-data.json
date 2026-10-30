@@ -92,7 +92,7 @@
     "id": "a0a4k81",
     "teamAName": "Time preto",
     "teamBName": "Time branco",
-    "scoreA": 8,
+    "scoreA": 9,
     "scoreB": 14,
     "squad": {
       "bm3x11z": {
@@ -527,6 +527,14 @@
         "team": "A",
         "teamName": "Time preto",
         "minute": 43
+      },
+      {
+        "type": "gol",
+        "playerId": "cjibbb6",
+        "playerName": "Sell",
+        "team": "A",
+        "teamName": "Time preto",
+        "minute": 46
       }
     ],
     "startedAt": 1793322517473,
@@ -534,5 +542,5 @@
     "running": true
   },
   "history": [],
-  "updatedAt": "2026-10-30T01:51:47.916Z"
+  "updatedAt": "2026-10-30T01:55:27.133Z"
 }
